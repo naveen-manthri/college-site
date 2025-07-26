@@ -1,0 +1,163 @@
+<div class="nav-head d-flex flex-column position-relative">
+  <!-- Contact Info Top -->
+  <div *ngIf="!canHide" class="d-flex justify-content-center align-items-center p-3 bg-brinjal-color">
+    <div class="fs-5 text-white d-flex flex-md-row flex-lg-row flex-column">
+      <div>
+        Contact:
+        <a [href]="'tel:' + mobile" class="text-decoration-none text-white">{{mobile}}</a>
+      </div>
+      <span class="d-none d-md-block d-lg-block px-2"> | </span>
+      <div>
+        Email:
+        <a [href]="'mailto:' + email" class="text-white text-decoration-none">{{email}}</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <div class="d-flex justify-content-between p-2 p-lg-3 mx-2 my-lg-1 mx-lg-4 gap-2 gap-lg-5 align-items-center">
+    <div class="d-flex justify-content-between align-items-center w-100">
+      <!-- Logo -->
+      <div routerLink="/home" class="cursor-pointer">
+        <img src="assets/external/college-logo.png" />
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="nav-bar-top-features align-items-center d-none d-lg-flex">
+        <span
+          routerLink="/home"
+          routerLinkActive="active-nav"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="pb-1 cursor-pointer text-nowrap"
+        >
+          Home
+        </span>
+        <span
+          routerLinkActive="active-nav"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="dropdown pb-2 cursor-pointer text-nowrap"
+        >
+          <span>About</span>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/about">About Math</a></li>
+            <li><a class="dropdown-item" routerLink="/about/founder-president">Founder President</a></li>
+          </ul>
+        </span>
+        <span
+          routerLinkActive="active-nav"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="dropdown pb-2 cursor-pointer text-nowrap"
+        >
+          <span>People</span>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/people">Director's Message</a></li>
+            <li><a class="dropdown-item" routerLink="/people/faculty">Faculty</a></li>
+            <li><a class="dropdown-item" routerLink="/people/administrative-staff">Administrative Staff</a></li>
+          </ul>
+        </span>
+        <span
+          routerLinkActive="active-nav"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="dropdown pb-2 cursor-pointer text-nowrap"
+        >
+          <span>Academics</span>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/academics">MBA in BGSCET</a></li>
+            <li><a class="dropdown-item" routerLink="/academics/explore-program">Explore Program</a></li>
+          </ul>
+        </span>
+        <span
+          routerLink="/campus"
+          routerLinkActive="active-nav"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="pb-2 cursor-pointer text-nowrap"
+        >
+          Campus life
+        </span>
+      </div>
+    </div>
+
+    <!-- Contact Button -->
+    <div class="nav-bar-contact-me d-none d-lg-flex bg-brinjal-color">
+      <button routerLink="/contact" class="nav-bar-text-contact text-nowrap text-white">
+        Contact Us
+      </button>
+    </div>
+
+    <!-- Mobile Hamburger Menu -->
+    <div
+      class="d-lg-none d-block cursor-pointer position-relative"
+      (click)="togglePopover()"
+      #popoverToggle
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24"
+        viewBox="0 -960 960 960"
+        width="24"
+        fill="#1f1f1f"
+      >
+        <path
+          d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+        />
+      </svg>
+
+      <!-- Mobile Dropdown -->
+      <div
+        *ngIf="showPopover"
+        class="mobile-popover-menu position-absolute mt-2 p-3 rounded shadow d-lg-none"
+      >
+        <span
+          routerLink="/home"
+          routerLinkActive="active-nav"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="d-block mb-2 cursor-pointer"
+          (click)="closePopover()"
+        >
+          Home
+        </span>
+        <span
+          routerLink="/about"
+          routerLinkActive="active-nav"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="d-block mb-2 cursor-pointer"
+          (click)="closePopover()"
+        >
+          About me
+        </span>
+        <span
+          routerLink="/services"
+          routerLinkActive="active-nav"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="d-block mb-2 cursor-pointer"
+          (click)="closePopover()"
+        >
+          Services
+        </span>
+        <span
+          routerLink="/gallery"
+          routerLinkActive="active-nav"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="d-block mb-2 cursor-pointer"
+          (click)="closePopover()"
+        >
+          Gallery
+        </span>
+        <button
+          routerLink="/contact"
+          class="btn btn-sm btn-dark mt-2 text-nowrap"
+          (click)="closePopover()"
+        >
+          Contact Me
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Info Bottom -->
+  <div *ngIf="!canHide" class="p-3 bg-brown-color d-flex justify-content-center align-items-center">
+    <div class="fs-5 text-white d-flex flex-md-row flex-lg-row flex-column">
+      <span>Advertisement : Admission open by 2025 by BGSCET</span>
+    </div>
+  </div>
+</div>

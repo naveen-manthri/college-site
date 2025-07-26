@@ -1,0 +1,35 @@
+.whatsapp-fixed-icon {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 9999;
+}
+
+.whatsapp-fixed-icon img {
+  width: 70px;
+  height: auto;
+  max-width: 100%;
+}
+.director-section {
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/assets/external/director-message.png);
+}
+
+.people-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #001a5d;
+}
+.bg-primary-blue {
+  background-color: #001a5d;
+}
+
+.btn-blue {
+  font-weight: 500;
+  background-color: #001498;
+}
+.content{
+  width: 80%;
+}

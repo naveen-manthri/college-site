@@ -1,0 +1,107 @@
+<div class="d-flex flex-column gap-5">
+  <a
+    [href]="'https://wa.me/' + mobile"
+    class="text-black text-decoration-none whatsapp-fixed-icon m-3"
+    target="_blank"
+  >
+    <img src="assets/external/whatsappicon.png" width="90" alt="WhatsApp" />
+  </a>
+  <div class="academics-img"></div>
+  <div class="d-flex flex-column gap-5 px-5 justify-content-center align-items-center">
+    <div class="underline fw-bold fs-1 text-heading-color">Explore Program </div>
+    <div class="fs-4 text-justify">
+      If you are looking for a way to advance your career, increase your earning potential, and gain valuable skills and knowledge, then our MBA program might be the perfect choice for you. Our MBA program is designed to prepare you for leadership roles in various fields and industries, such as finance, marketing, entrepreneurship, and more. BGS School of Management offers a two-year, full-time MBA program with a general management curriculum focused on real-world practice. Becoming a student at BGS means joining a global community that propels lifelong learning and career support alongside peers, faculty, and staff who will both challenge you and cheer you on as you find and accelerate your path. Students in our program engage in case studies, business simulations, and live projects. Ultimately, a BGS MBA degree helps you take the next step with confidence make it short
+    </div>
+  </div>
+
+  <div class="px-5 gap-5 d-flex flex-column justify-content-center align-items-center">
+    <div class="d-flex gap-4">
+      <div class="w-50 d-flex flex-column gap-5">
+        <div class="underline fw-bold fs-1 text-heading-color w-fit">General MBA </div>
+        <div class="fs-4">
+          What’s your MBA going to become? At BGSCET, our General MBA is built for those who don’t just want a job—they want options. With real industry exposure, mentoring, and dual specialization, you’ll grow into a confident problem-solver ready to lead in any domain. You bring the ambition—we’ll back it with experience.
+        </div>
+        <div class="fs-4">
+          <ul>
+            <li>Careers</li>
+            <li>Confidence</li>
+            <li>Case Studies</li>
+            <li>Leadership</li>
+            <li>Networking</li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center align-items-center w-50">
+        <img src="assets/external/activities-13.png" alt="Activities" class="w-100"/>
+      </div>
+    </div>
+    <div class="fs-4">
+      Your MBA should open doors. BGSCET’s General MBA puts you at the centre of opportunity, leadership, and lifelong learning.
+    </div>
+  </div>
+  <div class="px-5 d-flex gap-5 justify-content-center align-items-center">
+    <button class="bg-blue-color px-5 py-3 rounded-2 fs-2 fw-bold text-white">Apply Now</button>
+    <button class="bg-brown-color px-5 py-3 rounded-2 fs-2 fw-bold text-white">Download Brochure</button>
+  </div>
+
+  <div class="px-5 gap-5 d-flex flex-column justify-content-center align-items-center">
+    <div class="d-flex gap-4">
+      <div class="w-50 d-flex flex-column gap-5">
+        <div class="underline fw-bold fs-1 text-heading-color w-fit">MBA in Digital Marketing </div>
+        <div class="fs-4">
+          You already live online—why not lead there too? BGSCET’s MBA in Digital Marketing gives you the tools to turn clicks into campaigns and strategy into results. From SEO to storytelling, you’ll learn what top brands and digital agencies expect from tomorrow’s marketers. Build your personal brand while mastering the digital world.
+        </div>
+        <div class="fs-4">
+          <ul>
+            <li>Branding</li>
+            <li>Content</li>
+            <li>Data</li>
+            <li>Strategy</li>
+            <li>Results</li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center align-items-center w-50">
+        <img src="assets/external/students-2.png" alt="Activities" class="w-75"/>
+      </div>
+    </div>
+    <div class="fs-4">
+      Don’t just scroll—lead. BGSCET’s Digital Marketing MBA turns digital fluency into career power.
+    </div>
+  </div>
+  <div class="px-5 d-flex gap-5 justify-content-center align-items-center">
+    <button class="bg-blue-color px-5 py-3 rounded-2 fs-2 fw-bold text-white">Apply Now</button>
+    <button class="bg-brown-color px-5 py-3 rounded-2 fs-2 fw-bold text-white">Download Brochure</button>
+  </div>
+
+  <div class="px-5 d-flex flex-column gap-5 align-items-center mb-5">
+    <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
+      <div class="academics-heading text-primary-blue">Student Testimonial </div>
+    </div>
+    <div class="testimonial-card d-flex flex-column-reverse flex-md-row justify-content-center align-items-center p-4">
+      <div class="d-flex flex-column w-100 w-md-50 p-md-4 gap-2">
+        <div class="testimonial-text">
+          {{ testimonials[currentIndex].text }}
+        </div>
+        <div class="testimonial-author">
+          - {{ testimonials[currentIndex].author }}
+        </div>
+        <div class="d-flex gap-4 align-items-center">
+          <span style="font-size: 40px; cursor: pointer" (click)="prevTestimonial()">
+            &#8592;
+          </span>
+          <span style="font-size: 40px; cursor: pointer" (click)="nextTestimonial()">
+            &#8594;
+          </span>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center p-4 w-100 w-md-50">
+        <img
+          [src]="testimonials[currentIndex].image"
+          alt="{{ testimonials[currentIndex].author }} Testimonial"
+          class="testimonial-image"
+        />
+      </div>
+    </div>
+  </div>
+</div>

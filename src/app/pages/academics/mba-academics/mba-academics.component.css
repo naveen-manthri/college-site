@@ -1,0 +1,129 @@
+.academics-img {
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/assets/external/mba-group-pic.png);
+}
+.text-primary-blue {
+  color: #001a5d;
+}
+
+.bg-primary-blue {
+  background-color: #001a5d;
+}
+.bg-primary-brown{
+  background-color: #7B0053;
+}
+.whatsapp-fixed-icon {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 9999;
+}
+
+.whatsapp-fixed-icon img {
+  width: 70px;
+  height: auto;
+  max-width: 100%;
+}
+
+.academics-heading{
+  font-size: 2.5rem;
+  font-weight: 600;
+  border-bottom: solid 4px;
+}
+
+.btn {
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: 8px 16px;
+  color: white;
+}
+
+.stats-section {
+  background-color: rgba(228, 235, 239, 1);
+}
+
+.stat-value {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.college-icon{
+  background-size: cover;
+  background-image: url(/assets/external/college-icon.png);
+  background-repeat: no-repeat;
+  width: 55%;
+  height: 50%;
+}
+.users-icon{
+  background-size: cover;
+  background-image: url(/assets/external/users-icon.png);
+  background-repeat: no-repeat;
+  width: 60%;
+  height: 45%;
+}
+.experience-icon{
+  background-size: cover;
+  background-image: url(/assets/external/experience-icon.png);
+  background-repeat: no-repeat;
+  width: 55%;
+  height: 50%;
+}
+.graduation-icon{
+  background-size: cover;
+  background-image: url(/assets/external/graduation-icon.png);
+  background-repeat: no-repeat;
+  width: 70%;
+  height: 50%;
+}
+.stat-label {
+  font-size: 18px;
+  font-weight: 500;
+}
+.grad-student-icon{
+  background-size: cover;
+  background-image: url(/assets/external/grad-student-icon.png);
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 50px;
+}
+.graduation-icon-2{
+  background-size: cover;
+  background-image: url(/assets/external/graduation-icon-2.png);
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 50px;
+}
+.faculty-icon{
+  background-size: cover;
+  background-image: url(/assets/external/faculty-icon.png);
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 50px;
+}
+.holistic-learn-icon{
+  background-size: cover;
+  background-image: url(/assets/external/holistic-learn-icon.png);
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 50px;
+}
+.btn-blue {
+  font-size: 2rem;
+  border-radius: 4px;
+  padding: 8px 20px;
+  background-color: rgba(0, 26, 93, 1);
+  color: white;
+}
+.h-800{
+  height: 800px !important;
+}
+.h-300{
+  height: 300px !important;
+}
+.h-500{
+  height: 500px !important;
+}

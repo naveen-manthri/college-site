@@ -1,0 +1,25 @@
+<div class="d-flex flex-column gap-5">
+    <a
+    [href]="'https://wa.me/' + mobile"
+    class="text-black text-decoration-none whatsapp-fixed-icon m-3"
+    target="_blank"
+  >
+    <img src="assets/external/whatsappicon.png" width="90" alt="WhatsApp" />
+  </a>
+  <div class="faculty-main-img"></div>
+  <div class="d-flex flex-column gap-5 justify-content-center align-items-center mb-5">
+    <div class="underline fw-bold fs-1 text-heading-color">Faculty</div>
+    <div class="d-flex flex-column justify-content-center px-5" *ngFor="let faculty of facultyList">
+      <div class="faculty d-flex gap-5" >
+        <img [src]="faculty.image" class="rounded shadow-sm faculty-img" alt="{{ faculty.name }}">
+        <div class="d-flex flex-column gap-4">
+          <div class="d-flex flex-column gap-2 text-heading-color">
+            <div class="fw-bold fs-1">{{ faculty.name }}</div>
+            <div class="fs-3"><em>{{ faculty.designation }}</em></div>
+          </div>
+          <div class="text-justify fs-4">{{ faculty.content }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

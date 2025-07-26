@@ -1,0 +1,154 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.active-nav {
+  font-weight: 600;
+  border-bottom: 0.25rem solid black;
+}
+   
+.nav-bar-top-features {
+  gap: 3.125rem;
+  font-size: 1.3rem;
+}
+
+.nav-bar-text-contact-email, nav-bar-text-admission {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.nav-bar-contact-me {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+   
+.nav-bar-text-contact {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.mobile-popover-menu {
+  background-color: white;
+  right: 0rem;
+  transform: translate(calc(-25% + 0.625rem), -25%);
+  min-width: 10rem;
+  z-index: 999;
+}
+
+.mobile-popover-menu span,
+.mobile-popover-menu button {
+  font-size: 1rem;
+  text-align: left;
+}
+
+/* Dropdown menu under People nav item */
+.nav-bar-top-features .dropdown {
+  position: relative;
+}
+
+.nav-bar-top-features .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  padding: 0.5rem 0;
+  z-index: 999;
+  border-radius: 8px;
+}
+
+.nav-bar-top-features .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-bar-top-features .dropdown-item {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-bar-top-features .dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+/* 
+@media (min-width: 992px) {
+  .mobile-popover-menu {
+    display: none !important;
+  }
+  .nav-bar-top-features{
+    gap: 2rem;
+    font-size: 1.3rem;
+  }
+  .nav-bar-contact-email {
+    padding: 1.25rem;
+  }
+  .nav-bar-text-contact-email {
+    font-size: 1.5rem;
+  }
+  .nav-bar-title {
+    font-size: 1.5rem;
+  }
+  .w-90{
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .active-nav {
+    border-bottom: 0.125rem solid black;
+    width: fit-content;
+  }
+}
+@media (max-width: 768px){
+  .nav-bar-text-contact-email {
+    font-size: 1rem;
+  }
+  .nav-bar-contact-email{
+    padding: 1rem;
+  }
+}
+@media (max-width: 500px){
+  .nav-bar-text-contact-email {
+    font-size: 0.8rem;
+  }
+  .nav-bar-contact-email{
+    padding: 0.725rem;
+  }
+} */
+/* Dropdown menu under People nav item */
+.nav-bar-top-features .dropdown {
+  position: relative;
+}
+
+.nav-bar-top-features .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  padding: 0.5rem 0;
+  z-index: 999;
+  border-radius: 8px;
+}
+
+.nav-bar-top-features .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-bar-top-features .dropdown-item {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-bar-top-features .dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+

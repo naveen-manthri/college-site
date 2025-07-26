@@ -1,0 +1,254 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.top-bar {
+  background-color: #4b1773;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+
+.top-header {
+  background-color: #2b1c53;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-align: right;
+}
+.site-header {
+  background-color: white;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo img {
+  max-height: 50px;
+}
+.main-nav {
+  display: flex;
+  gap: 20px;
+}
+.main-nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.nav-cta {
+  margin-left: auto;
+}
+.contact-btn {
+  background-color: #2b1c53;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.advertisement {
+  background-color: #b0006d;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.faculty-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.faculty {
+  display: flex; /* ✅ FLEX HERE */
+  flex-direction: column;
+  gap: 40px;
+}
+
+.faculty-row {
+  display: flex;              /*  FLEX HERE */
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.faculty-row img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+}
+
+.faculty-row .info {
+  padding: 20px;
+  flex: 1;
+}
+
+.faculty-row .info h3 {
+  color: #2b1c53;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.faculty-row .info h4 {
+  color: #4a4a4a;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.faculty-row .info p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
+
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(to right, #830f86, #a5127a);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+.cta-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.cta-btn {
+  background: #ff4ea1;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.cta-btn:hover {
+  background: #d93b8d;
+}
+
+/* Footer */
+.footer {
+  background: #181818;
+  color: white;
+  padding: 40px 20px 0;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+  min-width: 220px;
+}
+.footer-left img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+.footer-center ul {
+  list-style: none;
+}
+.footer-center ul li {
+  margin-bottom: 8px;
+}
+.footer-center ul li a {
+  color: white;
+  text-decoration: none;
+}
+.footer-right p {
+  margin-bottom: 8px;
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  background: #0606d1;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faculty-row {
+    flex-direction: column;   /*  FLEX DIRECTION CHANGE */
+    align-items: center;
+    text-align: center;
+  }
+
+  .faculty-row img {
+    width: 100%;
+    height: auto;
+  }
+
+  .faculty-row .info {
+    padding: 20px;
+  }
+}
+
+
+.section-heading {
+  font-size: 2rem;
+  color: #0015a3; /* or deep blue */
+  text-align: center;
+  font-weight: 800;
+  display: inline-block;
+  border-bottom: 4px solid #0015a3;
+  padding-bottom: 5px;
+  margin: 40px auto 30px;
+}
+.faculty-heading {
+  text-align: center;
+  font-size: 56px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+  color: #2D2D91;
+  border-bottom: 4px solid #2D2D91;
+  display: inline-block;
+  padding-bottom: 10px;
+}

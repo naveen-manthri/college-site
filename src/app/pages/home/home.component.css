@@ -1,0 +1,161 @@
+.text-primary-blue {
+  color: #001a5d;
+}
+.bg-primary-blue {
+  background-color: #001a5d;
+}
+
+.home-profile-bottom{
+  background-color: #083375;
+}
+
+.btn-blue {
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: 8px 16px;
+  background-color: rgba(0, 26, 93, 1);
+  color: white;
+}
+
+.whatsapp-fixed-icon {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 9999;
+}
+
+.whatsapp-fixed-icon img {
+  width: 70px;
+  height: auto;
+  max-width: 100%;
+}
+
+.stats-section {
+  background-color: rgba(228, 235, 239, 1);
+}
+
+.stat-value {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.college-icon{
+  background-size: cover;
+  background-image: url(/assets/external/college-icon.png);
+  background-repeat: no-repeat;
+  width: 55%;
+  height: 50%;
+}
+.graduation-icon{
+  background-size: cover;
+  background-image: url(/assets/external/graduation-icon.png);
+  background-repeat: no-repeat;
+  width: 70%;
+  height: 50%;
+}
+.stat-label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.home-institute-info {
+  font-size: 20px;
+  font-weight: 400;
+  color: #4c4c4c;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.students-img {
+  background-size: cover;
+  background-image: linear-gradient(180deg, rgba(8, 27, 96, 0) 9.12%, #03124A 95.04%), url(/assets/external/students-1.png);
+  background-position: center;
+}
+
+.home-heading-text-4{
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.font-20{
+  font-size: 20px;
+}
+.btn-pink {
+  font-size: 1.5rem;
+  border-radius: 4px;
+  padding: 6px 10px;
+  background-color: rgba(238, 48, 145, 1);
+}
+
+.home-section{
+  background: linear-gradient(270deg, #572E88 0%, #7B0053 100%);
+}
+
+/* .home-heading{
+  font-weight: 600;
+} */
+
+.home-prgm-img{
+  height: 70%;
+}
+
+.home-prgm-content{
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+
+.home-industry-list-item{
+  width: 40%;
+}
+
+.btn-grey {
+  font-weight: 500;
+  background-color: #F0EDED;
+}
+
+.company-logo{
+  width: 250px;
+  height: 130px;
+}
+
+.testimonial-card {
+  width: 90%;
+  background-color: #f7f7f7;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.testimonial-text {
+  font-size: 1.625rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #4c4c4c;
+  text-align: justify;
+}
+
+.testimonial-author {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 0;
+  text-align: right;
+}
+
+.testimonial-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-heading-text-1{
+  font-size: 36px;
+  font-weight: 600;
+}
+.text-color-pink {
+  color: rgba(238, 48, 145, 1)
+}

@@ -1,0 +1,15 @@
+.main{
+    background: linear-gradient(270deg, #572E88 0%, #7B0053 100%);
+}
+
+.btn-primary-pink {
+    font-size: 1.25rem;
+    background-color: #ee3091;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-weight: 600;
+}
+  
+.btn-primary-pink:hover {
+    background-color: #d12a7d;
+}

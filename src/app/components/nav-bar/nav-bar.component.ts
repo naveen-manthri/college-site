@@ -12,6 +12,7 @@ export class NavBarComponent implements OnInit {
   constructor(public router: Router) {}
   canHide: boolean = false;
   mobile = AppConstants.Mobile;
+  mobile2 = AppConstants.Mobile2;
   email = AppConstants.Email;
 
   private routerSubscription!: Subscription;

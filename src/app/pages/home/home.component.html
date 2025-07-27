@@ -1,4 +1,4 @@
-<div class="d-flex flex-column w-100">
+<div class="d-flex flex-column">
   <app-carousel class="d-none d-md-block"></app-carousel>
   <div class="stats-section d-flex justify-content-around align-items-center p-3">
     <div class="d-flex flex-column justify-content-center align-items-center w-25">
@@ -27,19 +27,17 @@
   >
     <img src="assets/external/whatsappicon.png" width="90" alt="WhatsApp" />
   </a>
-  <div class="px-4 py-5 px-md-5 d-flex flex-column justify-content-center align-items-center">
-    <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
-      <div class="underline fw-bold fs-1 text-heading-color">About the Institute</div>
-    </div>
-    <div class="d-flex flex-column gap-4 p-5 align-items-center">
-      <div class="d-flex flex-column-reverse flex-md-row gap-4 pt-2 justify-content-center align-items-center w-100">
-        <div class="text-justify fs-4 w-100 w-md-50 text-md-start d-flex flex-column gap-2 align-items-center">
-          <p>
+  <div class="p-5 gap-5 d-flex flex-column justify-content-center align-items-center">
+    <div class="underline fw-bold fs-1 text-heading-color m-auto">About the Institute</div>
+    <div class="d-flex flex-column gap-5 align-items-center">
+      <div class="d-flex flex-column-reverse flex-md-row gap-5 justify-content-center align-items-center w-100">
+        <div class="text-justify fs-4 w-100 w-md-50 text-md-start d-flex flex-column align-items-center gap-5">
+          <div>
             Sri Adichunchanagiri Mahasamsthana Math is a spiritual and social centre with a history of over 1800 years. It has 500+ educational institutions that educate more than 200,000 students. Most institutions are located in rural parts of the country and offer education from kindergarten to PhD.
-          </p>
-          <p>
+            <br/>
+            <br/>
             BGS College of Engineering and Technology (BGSCET) is a unit of Sri Adichunchanagiri Shikshana Trust, founded in 2022. It is located in west Bangalore, home of iconic landmarks such as the Indian Institute of Science, the World Trade Centre, and the ISKCON Temple. The institution is easily accessible by Namma Metro and Majestic Bus Station, City, and Yeshwantpur railway junctions.
-          </p>
+          </div>
           <button class="bg-blue-color rounded-2 px-4 py-3 fs-4 fw-bold text-white" (click)="onBookAnAppointmentBtnClick()">
             For Admission Click here
           </button>
@@ -70,41 +68,43 @@
     <div class="underline fw-bold fs-1 text-heading-color">Industry-Relevant Specializations</div>
     <div class="d-flex justify-content-center gap-4 w-100">
       <div class="d-flex flex-column gap-2 w-50">
-        <img
-          src="/assets/external/mba-img-1.png"
-          alt="Image 1" class="w-100"
-        />
+        <div class="h-450 overflow-hidden position-relative">
+          <img src="/assets/external/mba-img-1.png" alt="Image 1" class="w-100 h-100 object-fit-cover transition-zoomin-img" />
+        </div>
         <div class="btn-grey fs-4 text-center p-3">General MBA</div>
       </div>
       <div class="d-flex flex-column gap-2 w-50">
-        <img
-          src="/assets/external/mba-img-2.png"
-          alt="Image 2" class="w-100"
-        />
+        <div class="h-450 overflow-hidden position-relative">
+          <img src="/assets/external/mba-img-2.png" alt="Image 2" class="w-100 h-100 object-fit-cover transition-zoomin-img" />
+        </div>
         <div class="btn-grey fs-4 text-center p-3">MBA in Digital Marketing</div>
       </div>
     </div>
   </div>
 
-  <div class="d-flex flex-column gap-5 p-5 pt-0 justify-content-center align-items-center">
+  <div class="d-flex flex-column gap-5 px-5 justify-content-center align-items-center">
     <div class="underline fw-bold fs-1 text-heading-color">Campus Life</div>
-    <div class="d-flex flex-column gap-3 justify-content-center align-items-center px-5">
-      <div class="d-flex gap-3">
-        <div class="d-flex flex-column w-50 justify-content-between">
-          <img src="assets/external/home-cl-1.png" alt="Image 1" class="w-100"/>
-          <img src="assets/external/home-cl-2.png" alt="Image 2" class="w-100" />
+    <div class="d-flex flex-column gap-3">
+      <div class="d-flex gap-3 h-700">
+        <div class="d-flex flex-column w-50 gap-3">
+          <div class="h-50 overflow-hidden position-relative">
+            <img src="assets/external/home-cl-1.png" alt="Image 1" class="w-100 h-100 object-fit-cover transition-zoomin-img" />
+          </div>
+          <div class="h-50 overflow-hidden position-relative">
+            <img src="assets/external/home-cl-2.png" alt="Image 2" class="w-100 h-100 object-fit-cover transition-zoomin-img" />
+          </div>
         </div>
-        <div class="w-50">
-          <img src="assets/external/home-cl-3.png" alt="Image 3" class="w-100"/>
+        <div class="w-50 overflow-hidden position-relative">
+          <img src="assets/external/home-cl-3.png" alt="Image 3" class="w-100 h-100 object-fit-cover transition-zoomin-img"/>
         </div>
       </div>
-      <div class="w-100">
-        <img src="assets/external/home-cl-4.png" alt="Image 4" class="w-100"/>
+      <div class="w-100 overflow-hidden position-relative">
+        <img src="assets/external/home-cl-4.png" alt="Image 4" class="w-100 h-100 object-fit-cover transition-zoomin-img"/>
       </div>
     </div>
   </div>
 
-  <div class="d-flex gap-5 my-4 justify-content-center align-items-center">
+  <div class="d-flex gap-5 p-5 justify-content-center align-items-center">
     <button class="bg-blue-color rounded-2 px-5 py-3 fs-4 fw-bold text-white" (click)="onBookAnAppointmentBtnClick()">
       For Admission Click here
     </button>
@@ -113,29 +113,58 @@
     </button>
   </div>
 
-  <div class="d-flex flex-column gap-5 p-4 my-5 justify-content-center align-items-center home-section">
+  <div class="d-flex flex-column gap-5 p-5 justify-content-center align-items-center home-section">
     <div class="underline fw-bold fs-1 text-white">Campus Placement</div>
-    <div class="d-flex gap-5 w-75 justify-content-center align-items-center">
-      <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
-        <img src="assets/external/tata-logo.png" alt="TATA" class="w-50"/>
-      </div>
-      <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
-        <img src="assets/external/big-basket-logo.png" alt="Big Basket" class="w-75"/>
-      </div>
-      <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
-        <img src="assets/external/tata-logo.png" alt="TATA" class="w-50"/>
-      </div>
-      <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
-        <img src="assets/external/big-basket-logo.png" alt="Big Basket" class="w-75"/>
+    <div class="logo-marquee-wrapper">
+      <div class="d-flex gap-5 justify-content-center align-items-center logo-marquee">
+        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+          <img src="assets/external/tata-logo.png" alt="TATA" class="w-50"/>
+        </div>
+        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+          <img src="assets/external/big-basket-logo.png" alt="Big Basket" class="w-75"/>
+        </div>
+        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+          <img src="assets/placement-logos/abc-tech-logo.png" alt="ABC Tech" class="w-75"/>
+        </div>
+        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+          <img src="assets/placement-logos/akshayakalpa-logo.png" alt="ABC Tech" class="w-75"/>
+        </div>
+        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+          <img src="assets/placement-logos/asaw-logo.png" alt="ABC Tech" class="w-75"/>
+        </div>
+        <!-- <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+          <img src="assets/placement-logos/broadridge-logo.png" alt="ABC Tech" class="w-75"/>
+        </div>
+        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+          <img src="assets/placement-logos/corizo-logo.png" alt="ABC Tech" class="w-75"/>
+        </div>
+        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+          <img src="assets/placement-logos/digitalsprint-logo.png" alt="ABC Tech" class="w-75"/>
+        </div>
+        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+          <img src="assets/placement-logos/dr-agarwal-logo.png" alt="ABC Tech" class="w-75"/>
+        </div>
+        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+          <img src="assets/placement-logos/duru-logo.png" alt="ABC Tech" class="w-75"/>
+        </div>
+        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+          <img src="assets/placement-logos/godrej-logo.png" alt="ABC Tech" class="w-75"/>
+        </div>
+        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+          <img src="assets/placement-logos/hexaware-logo.png" alt="ABC Tech" class="w-75"/>
+        </div>
+        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+          <img src="assets/placement-logos/hr-labs-logo.png" alt="ABC Tech" class="w-75"/>
+        </div> -->
       </div>
     </div>
   </div>
 
-  <div class="d-flex flex-column gap-5 p-5 pt-0 justify-content-center align-items-center">
+  <div class="d-flex flex-column gap-5 p-5 justify-content-center align-items-center">
     <div class="underline fw-bold fs-1 text-heading-color">Our Achievements</div>
-    <div class="d-flex gap-4">
-      <div class="w-50">
-        <img src="assets/external/home-achieve-img.png" alt="Image 4" class="w-100"/>
+    <div class="d-flex gap-5">
+      <div class="w-50 overflow-hidden position-relative">
+        <img src="assets/external/home-achieve-img.png" alt="Image 4" class="w-100 h-100 object-fit-cover transition-zoomin-img"/>
       </div>
       <div class="w-50">
         <div class="fs-2 fw-bold">Winners</div>
@@ -146,14 +175,14 @@
     </div>
   </div>
 
-  <div class="d-flex flex-column gap-5 w-100 align-items-center my-4">
+  <div class="d-flex flex-column px-5 gap-5 w-100 align-items-center">
     <div class="underline fw-bold fs-1 text-heading-color">Student Testimonial</div>
-    <div class="testimonial-card d-flex flex-column-reverse flex-md-row justify-content-center align-items-center p-4">
-      <div class="d-flex flex-column w-100 w-md-50 p-md-4 gap-2">
-        <div class="testimonial-text">
+    <div class="rounded-3 shadow card-bg-color d-flex flex-column-reverse flex-md-row justify-content-center align-items-center p-5 gap-5">
+      <div class="d-flex flex-column w-50 gap-3">
+        <div class="fs-3 text-justify">
           {{ testimonials[currentIndex].text }}
         </div>
-        <div class="testimonial-author">
+        <div class="fs-2 fw-bold text-end">
           - {{ testimonials[currentIndex].author }}
         </div>
         <div class="d-flex gap-4 align-items-center">
@@ -165,11 +194,11 @@
           </span>
         </div>
       </div>
-      <div class="d-flex justify-content-center p-4 w-100 w-md-50">
+      <div class="rounded-3 shadow overflow-hidden position-relative">
         <img
           [src]="testimonials[currentIndex].image"
           alt="{{ testimonials[currentIndex].author }} Testimonial"
-          class="testimonial-image"
+          class="w-100 h-100 object-fit-cover transition-zoomin-img"
         />
       </div>
     </div>

@@ -652,3 +652,9 @@ body { margin: 0; font-family: Poppins; }
 .w-fit{
   width: fit-content !important;
 }
+.transition-zoomin-img {
+  transition: transform 0.5s ease;
+}
+.transition-zoomin-img:hover {
+  transform: scale(1.1);
+}

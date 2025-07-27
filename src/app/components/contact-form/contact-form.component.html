@@ -15,7 +15,7 @@
   <input
     type="hidden"
     name="Message"
-    value="Dear Dr. Sachin, you have received a new appointment request from a patient."
+    value="Dear Management, you have received a new admission request from a student."
   />
   <input
     type="hidden"
@@ -25,12 +25,13 @@
   <input type="hidden" name="Last Name" [value]="contactForm.value.lastName" />
   <input type="hidden" name="Email" [value]="contactForm.value.email" />
   <input type="hidden" name="Mobile" [value]="contactForm.value.mobile" />
+  <input type="hidden" name="Course" [value]="contactForm.value.course" />
 </form>
 
 <form
   [formGroup]="contactForm"
   (ngSubmit)="onSubmit()"
-  class="form-head d-flex flex-column gap-4 pe-4"
+  class="form-head d-flex flex-column gap-4 pe-4 pb-5"
 >
   <div class="d-flex flex-column gap-2">
     <label class="input-label-text">First Name*</label>

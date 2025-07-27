@@ -3,11 +3,9 @@
 }
 
 .btn-primary-pink {
-    font-size: 1.25rem;
     background-color: #ee3091;
     transition: background-color 0.3s ease;
     cursor: pointer;
-    font-weight: 600;
 }
   
 .btn-primary-pink:hover {

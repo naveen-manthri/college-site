@@ -61,12 +61,10 @@
             </div>
           </div>
           <div class="d-flex gap-4">
-            <button class="bg-brown-color rounded-2 px-4 py-3 fs-4 fw-bold text-white" (click)="onBookAnAppointmentBtnClick()">
-            Explore our program
-          </button>
-          <button class="rounded-2 px-4 py-3 fs-4 fw-bold text-white" (click)="onBookAnAppointmentBtnClick()" style="background: #572F81;">
-            Download Brochure
-          </button>
+            <a routerLink="/academics/explore-program" class="bg-brown-color rounded-2 px-4 py-3 fs-4 fw-bold text-white text-decoration-none"> Explore our program </a>
+            <button class="rounded-2 px-4 py-3 fs-4 fw-bold text-white" style="background: #572F81;">
+              Download Brochure
+            </button>
           </div>
         </div>
         <div class="d-flex gap-5 px-5">
@@ -84,12 +82,11 @@
           <div class="fs-2 fw-bold text-white">
             Admission open for 2025-26  PGCET COLLEGE CODE - B099
           </div>
-          <button
-            class="btn-brown text-white"
-            (click)="onBookAnAppointmentBtnClick()"
+          <a routerLink="/academics/explore-program"
+            class="btn-brown text-white text-decoration-none"
           >
             Explore our program
-          </button>
+          </a>
         </div>
       </div>
     </div>

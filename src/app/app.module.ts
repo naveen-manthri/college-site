@@ -5,9 +5,6 @@ import { ComponentsModule } from './components/components.module'
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations'
 import { MatDialogModule } from '@angular/material/dialog';
-import { PeopleComponent } from './pages/people/people.component';
-import { AcademicsComponent } from './pages/academics/academics.component';
-import { CampusComponent } from './pages/campus/campus.component'
 
 const routes: Routes = [
   {

@@ -24,7 +24,7 @@
       </div>
 
       <!-- Desktop Navigation -->
-      <div class="nav-bar-top-features align-items-center d-none d-lg-flex">
+      <div class="nav-bar-top-features align-items-center d-none d-xl-flex">
         <span
           routerLink="/home"
           routerLinkActive="active-nav"
@@ -75,11 +75,14 @@
         >
           Campus life
         </span>
+        <!-- <span routerLink="/contact" class="bg-brinjal-color text-nowrap rounded-2 p-3 fw-bold text-white">
+            Contact Us
+        </span> -->
       </div>
     </div>
 
     <!-- Contact Button -->
-    <div class="nav-bar-contact-me d-none d-lg-flex bg-brinjal-color">
+    <div class="nav-bar-contact-me d-none d-xl-flex bg-brinjal-color">
       <button routerLink="/contact" class="nav-bar-text-contact text-nowrap text-white">
         Contact Us
       </button>
@@ -87,7 +90,7 @@
 
     <!-- Mobile Hamburger Menu -->
     <div
-      class="d-lg-none d-block cursor-pointer position-relative"
+      class="d-xl-none d-block cursor-pointer position-relative"
       (click)="togglePopover()"
       #popoverToggle
     >
@@ -106,13 +109,13 @@
       <!-- Mobile Dropdown -->
       <div
         *ngIf="showPopover"
-        class="mobile-popover-menu position-absolute mt-2 p-3 rounded shadow d-lg-none"
+        class="mobile-popover-menu position-absolute mt-2 p-3 rounded shadow d-xl-none"
       >
         <span
           routerLink="/home"
           routerLinkActive="active-nav"
           [routerLinkActiveOptions]="{ exact: true }"
-          class="d-block mb-2 cursor-pointer"
+          class="d-block mb-2 cursor-pointer w-fit"
           (click)="closePopover()"
         >
           Home
@@ -121,28 +124,37 @@
           routerLink="/about"
           routerLinkActive="active-nav"
           [routerLinkActiveOptions]="{ exact: true }"
-          class="d-block mb-2 cursor-pointer"
+          class="d-block mb-2 cursor-pointer w-fit"
           (click)="closePopover()"
         >
           About me
         </span>
         <span
-          routerLink="/services"
+          routerLink="/people"
           routerLinkActive="active-nav"
           [routerLinkActiveOptions]="{ exact: true }"
-          class="d-block mb-2 cursor-pointer"
+          class="d-block mb-2 cursor-pointer w-fit"
           (click)="closePopover()"
         >
-          Services
+          People
         </span>
         <span
-          routerLink="/gallery"
+          routerLink="/academics"
           routerLinkActive="active-nav"
           [routerLinkActiveOptions]="{ exact: true }"
-          class="d-block mb-2 cursor-pointer"
+          class="d-block mb-2 cursor-pointer w-fit"
           (click)="closePopover()"
         >
-          Gallery
+          Academics
+        </span>
+        <span
+          routerLink="/campus"
+          routerLinkActive="active-nav"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="d-block mb-2 cursor-pointer w-fit"
+          (click)="closePopover()"
+        >
+          Campus life
         </span>
         <button
           routerLink="/contact"

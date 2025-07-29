@@ -93,12 +93,12 @@
   background: linear-gradient(270deg, #572E88 0%, #7B0053 100%);
 }
 
-/* .home-heading{
-  font-weight: 600;
-} */
-
+.college-video{
+  max-width: 500px;
+  max-height: 625px;
+}
 .home-prgm-img{
-  height: 70%;
+  width: 500px;
 }
 
 .home-prgm-content{

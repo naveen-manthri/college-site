@@ -29,19 +29,28 @@ export class AdministrativeStaffComponent implements OnInit {
       name: 'Vinay Kumar Y S',
       designation: 'Accountant',
       image: 'assets/external/staff-3.png',
-      content: `Vinay Kumar Y.S. serves as the Accountant for the MBA program at BGSCET, bringing with him 2.9 years of experience in the field. In this role, Vinay is responsible for managing and overseeing all financial transactions and accounting activities related to the MBA program. His meticulous approach ensures accurate financial reporting and effective budget management, which are crucial to the program’s financial stability and operational efficiency. Vinay’s expertise and attention to detail significantly contribute to maintaining the program’s financial integrity and adherence to institutional policies.`
-    },
-    {
-      name: 'Tejashree B S',
-      designation: 'Intern',
-      image: 'assets/external/staff-4.png',
-      content: `Tejashree is currently serving as an intern within the MBA program at BGSCET. In this capacity, she actively contributes to various administrative tasks, gaining valuable hands-on experience in the field of business administration. Her role involves supporting the program’s daily operations, assisting with Program Director, Program Manager, Program Coordinator, and engaging in various initiatives that enhance the overall experience. Tejashree’s internship is an integral part of her professional development, and her contributions are instrumental in supporting the program’s objectives and operations.`
+      content: `Vinay Kumar Y.S. serves as the Accountant for the MBA program at BGSCET, bringing with him 4 years of experience in the field. In this role, Vinay is responsible for managing and overseeing all financial transactions and accounting activities related to the MBA program. His meticulous approach ensures accurate financial reporting and effective budget management, which are crucial to the program’s financial stability and operational efficiency. Vinay’s expertise and attention to detail significantly contribute to maintaining the program’s financial integrity and adherence to institutional policies.`
     },
     {
       name: 'Namrata V Hubli',
       designation: 'Program Coordinator & Research Assistant',
       image: 'assets/external/staff-5.png',
       content: `Namrata V. Hubli serves as the Program Coordinator for the MBA program at BGSCET and also functions as a Research Assistant to the Program Director. She is a dynamic and analytical MSc Economics graduate from Dr. B.R. Ambedkar School of Economics, Bengaluru. With a strong background in quantitative and qualitative analysis, she brings expertise in tools such as Python, R, Power BI, and STATA. Namrata’s academic achievements are matched by her professional experience as a Research Assistant at 60 Decibels, where she excelled in data collection and analysis. Passionate about impactful research, she has explored areas like sustainable development, game theory, and macroeconomic dynamics. Her interests extend beyond academics to include Taekwondo, photography, and community engagement.`
+    },
+    {
+      name: 'Gowtham R',
+      designation: 'Accounts Assistant - Intern',
+      image: 'assets/external/staff-6.png',
+      content: `Gowtham is currently serving as an Account Assistant Intern at BGSCET department of MBA, where he actively supports the finance and accounting operations of the institution. In this role, he assists with maintaining financial records, preparing reports, processing invoices, and supporting budget-related activities. 
+      Under the guidance of the accounting team, Gowtham is gaining valuable hands-on experience in institutional accounting practices and financial management. He also collaborates with administrative staff to ensure accuracy and compliance in daily financial tasks.
+      Gowtham’s internship plays a vital role in his professional development, offering him the opportunity to apply his academic learning in a practical setting while contributing meaningfully to the efficiency and effectiveness of the department.`
+    },
+    {
+      name: 'Lohith D',
+      designation: 'Admission and Program Coordinator - Intern',
+      image: 'assets/external/staff-7.png',
+      content: `Lohith is currently serving as an intern within the MBA program at BGSCET. In this capacity, he actively contributes to various administrative tasks, gaining valuable hands-on experience in the field of business administration. His role involves supporting the program's daily operations, assisting the Program Director, Program Manager, and Program Coordinator, and engaging in various initiatives that enhance the overall experience. 
+      He is also working on video content creation, helping to visually communicate the program’s activities, events, and achievements. Lohith’s internship is an integral part of his professional development, and his contributions are instrumental in supporting the program's objectives and operations.`
     }
   ];
 

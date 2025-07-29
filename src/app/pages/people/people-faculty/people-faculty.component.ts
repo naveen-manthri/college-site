@@ -39,15 +39,15 @@ export class PeopleFacultyComponent implements OnInit {
     {
       name: 'Prof. S. Sandhya',
       designation: 'Assistant Professor',
-      image: 'assets/external/Faculty-5.png',
+      image: 'assets/external/Faculty-5.jpg',
       content: `Sandhya is a dedicated research scholar with a strong academic background, currently pursuing her Doctor of Philosophy as a Part-Time Research Scholar at the NIT Andhra Pradesh. She holds a Master of Business Administration in HR and Marketing from NIT Karnataka, and a Master of Technology in Power and Industrial Drives from JNTU Anantapur. Sandhya’s software skills include proficiency in Python, R language, and Tableau, and she is known for her innovative teaching style that emphasizes practical knowledge and current trends. Sandhya’s profile reflects a blend of technical expertise, academic excellence, and a forward-thinking approach to education and research.`
     },
-    {
-      name: 'Prof. Shalini P. R',
-      designation: 'Assistant Professor',
-      image: 'assets/external/Faculty-6.png',
-      content: `Shalini is an MBA in Finance graduate with a solid background in banking operations and e-learning development. Academically, she holds a Master of Business Administration in Finance from JSS Centre for Management Studies and a Bachelor’s in Business Management from MMK and SDM College. Her technical skills include proficiency in Finacle Banking Software, MS Office, and Tally 9.`
-    },
+    // {
+    //   name: 'Prof. Shalini P. R',
+    //   designation: 'Assistant Professor',
+    //   image: 'assets/external/Faculty-6.png',
+    //   content: `Shalini is an MBA in Finance graduate with a solid background in banking operations and e-learning development. Academically, she holds a Master of Business Administration in Finance from JSS Centre for Management Studies and a Bachelor’s in Business Management from MMK and SDM College. Her technical skills include proficiency in Finacle Banking Software, MS Office, and Tally 9.`
+    // },
     {
       name: 'Prof. Suneel Rao T.R',
       designation: 'Assistant Professor',

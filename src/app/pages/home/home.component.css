@@ -169,3 +169,7 @@
     transform: translateX(-100%);
   }
 }
+.testimonial-img{
+  max-width: 425px;
+  max-height: 450px;
+}

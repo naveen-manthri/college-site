@@ -39,7 +39,7 @@ export class PeopleFacultyComponent implements OnInit {
     {
       name: 'Prof. S. Sandhya',
       designation: 'Assistant Professor',
-      image: 'assets/external/Faculty-5.jpg',
+      image: 'assets/external/Faculty-5.png',
       content: `Sandhya is a dedicated research scholar with a strong academic background, currently pursuing her Doctor of Philosophy as a Part-Time Research Scholar at the NIT Andhra Pradesh. She holds a Master of Business Administration in HR and Marketing from NIT Karnataka, and a Master of Technology in Power and Industrial Drives from JNTU Anantapur. Sandhya’s software skills include proficiency in Python, R language, and Tableau, and she is known for her innovative teaching style that emphasizes practical knowledge and current trends. Sandhya’s profile reflects a blend of technical expertise, academic excellence, and a forward-thinking approach to education and research.`
     },
     // {

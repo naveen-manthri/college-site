@@ -5,7 +5,7 @@
   background-color: #001a5d;
 }
 
-.home-profile-bottom{
+.home-profile-bottom {
   background-color: #083375;
 }
 
@@ -35,20 +35,21 @@
 }
 
 .stat-value {
-  width: 50px;
-  height: 50px;
+  /* width: 50px;
+  height: 50px; */
+  padding: 1.5rem;
   border-radius: 50%;
   background-color: white;
 }
 
-.college-icon{
+.college-icon {
   background-size: cover;
   background-image: url(/assets/external/college-icon.png);
   background-repeat: no-repeat;
-  width: 55%;
-  height: 50%;
+  width: 70px;
+  height: 65px;
 }
-.graduation-icon{
+.graduation-icon {
   background-size: cover;
   background-image: url(/assets/external/graduation-icon.png);
   background-repeat: no-repeat;
@@ -70,16 +71,21 @@
 
 .students-img {
   background-size: cover;
-  background-image: linear-gradient(180deg, rgba(8, 27, 96, 0) 9.12%, #03124A 95.04%), url(/assets/external/students-1.png);
+  background-image: linear-gradient(
+      180deg,
+      rgba(8, 27, 96, 0) 9.12%,
+      #03124a 95.04%
+    ),
+    url(/assets/external/students-1.png);
   background-position: center;
 }
 
-.home-heading-text-4{
+.home-heading-text-4 {
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 1;
 }
-.font-20{
+.font-20 {
   font-size: 20px;
 }
 .btn-pink {
@@ -89,35 +95,34 @@
   background-color: rgba(238, 48, 145, 1);
 }
 
-.home-section{
-  background: linear-gradient(270deg, #572E88 0%, #7B0053 100%);
+.home-section {
+  background: linear-gradient(270deg, #572e88 0%, #7b0053 100%);
 }
 
-.college-video{
+.college-video {
   max-width: 500px;
   max-height: 625px;
 }
-.home-prgm-img{
+.home-prgm-img {
   width: 500px;
 }
 
-.home-prgm-content{
+.home-prgm-content {
   font-size: 1.5rem;
   text-align: justify;
   line-height: 1.7;
 }
 
-
-.home-industry-list-item{
+.home-industry-list-item {
   width: 40%;
 }
 
 .btn-grey {
   font-weight: 500;
-  background-color: #F0EDED;
+  background-color: #f0eded;
 }
 
-.company-logo{
+.company-logo {
   width: 250px;
   height: 130px;
 }
@@ -125,19 +130,19 @@
 .card-bg-color {
   background-color: #f7f7f7;
 }
-.home-heading-text-1{
+.home-heading-text-1 {
   font-size: 36px;
   font-weight: 600;
 }
 .text-color-pink {
-  color: rgba(238, 48, 145, 1)
+  color: rgba(238, 48, 145, 1);
 }
-.h-450 {
+/* .h-450 {
   height: 450px;
-}
-.h-700{
+} */
+/* .h-700 {
   height: 700px;
-}
+} */
 .logo-marquee-wrapper {
   overflow: hidden;
   position: relative;
@@ -169,7 +174,32 @@
     transform: translateX(-100%);
   }
 }
-.testimonial-img{
+.testimonial-img {
   max-width: 425px;
   max-height: 450px;
+}
+@media (min-width: 576px) {
+  .h-450 {
+    height: 450px;
+  }
+  .h-700 {
+    height: 700px;
+  }
+}
+@media (max-width: 576px) {
+  .stat-value {
+    padding: 0.625rem;
+  }
+  .fs-4 {
+    font-size: 14px !important;
+  }
+
+  .college-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .stat-label {
+    font-size: 8px;
+  }
 }

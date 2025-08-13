@@ -6,13 +6,14 @@
   font-weight: 600;
   border-bottom: 0.25rem solid black;
 }
-   
+
 .nav-bar-top-features {
   gap: 3.125rem;
   font-size: 1.3rem;
 }
 
-.nav-bar-text-contact-email, nav-bar-text-admission {
+.nav-bar-text-contact-email,
+nav-bar-text-admission {
   font-size: 1rem;
   font-weight: 600;
 }
@@ -21,7 +22,7 @@
   padding: 0.75rem;
   border-radius: 0.5rem;
 }
-   
+
 .nav-bar-text-contact {
   font-size: 1rem;
   font-weight: 500;
@@ -118,4 +119,18 @@
   100% {
     transform: translateX(-100%);
   }
+}
+@media (min-width: 576px) {
+  .fs-5-sm {
+    font-size: 1rem !important;
+  }
+}
+.fs-7 {
+  font-size: 14px;
+}
+.fs-8 {
+  font-size: 0.75rem;
+}
+.fs-9 {
+  font-size: 0.625rem;
 }

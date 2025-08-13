@@ -25,7 +25,7 @@ export class NavBarComponent implements OnInit {
     .subscribe(() => {
       this.updateCanHide(); // update on route change
     });
-    this.canHide = this.router.url === '/home' && window.innerWidth < 768;
+    // this.canHide = this.router.url === '/home' && window.innerWidth < 500;
     this.router.events
     .pipe(filter(event => event instanceof NavigationEnd))
     .subscribe(() => this.closePopover());

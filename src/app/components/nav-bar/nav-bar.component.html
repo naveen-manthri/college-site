@@ -153,47 +153,113 @@
           routerLink="/home"
           routerLinkActive="active-nav"
           [routerLinkActiveOptions]="{ exact: true }"
-          class="d-block mb-2 cursor-pointer w-fit"
+          class="d-block mb-2 cursor-pointer w-sm-fit"
           (click)="closePopover()"
         >
           Home
         </span>
-        <span
-          routerLink="/about"
-          routerLinkActive="active-nav"
-          [routerLinkActiveOptions]="{ exact: true }"
-          class="d-block mb-2 cursor-pointer w-fit"
-          (click)="closePopover()"
-        >
-          About me
-        </span>
-        <span
-          routerLink="/people"
-          routerLinkActive="active-nav"
-          [routerLinkActiveOptions]="{ exact: true }"
-          class="d-block mb-2 cursor-pointer w-fit"
-          (click)="closePopover()"
-        >
-          People
-        </span>
-        <span
-          routerLink="/academics"
-          routerLinkActive="active-nav"
-          [routerLinkActiveOptions]="{ exact: true }"
-          class="d-block mb-2 cursor-pointer w-fit"
-          (click)="closePopover()"
-        >
-          Academics
-        </span>
+
+        <!-- About -->
+        <div class="mb-2">
+          <span class="d-block cursor-pointer" (click)="toggleSubmenu('about')">
+            About
+          </span>
+          <ul *ngIf="activeMenu === 'about'" class="list-unstyled ps-3 mb-0">
+            <li>
+              <a
+                class="d-block cursor-pointer"
+                routerLink="/about"
+                (click)="closePopover()"
+                >About Math</a
+              >
+            </li>
+            <li>
+              <a
+                class="d-block cursor-pointer"
+                routerLink="/about/founder-president"
+                (click)="closePopover()"
+                >Founder President</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- People -->
+        <div class="mb-2">
+          <span
+            class="d-block cursor-pointer fw-bold"
+            (click)="toggleSubmenu('people')"
+          >
+            People
+          </span>
+          <ul *ngIf="activeMenu === 'people'" class="list-unstyled ps-3 mb-0">
+            <li>
+              <a
+                class="d-block cursor-pointer"
+                routerLink="/people"
+                (click)="closePopover()"
+                >Director's Message</a
+              >
+            </li>
+            <li>
+              <a
+                class="d-block cursor-pointer"
+                routerLink="/people/faculty"
+                (click)="closePopover()"
+                >Faculty</a
+              >
+            </li>
+            <li>
+              <a
+                class="d-block cursor-pointer"
+                routerLink="/people/administrative-staff"
+                (click)="closePopover()"
+                >Administrative Staff</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Academics -->
+        <div class="mb-2">
+          <span class="d-block" (click)="toggleSubmenu('academics')">
+            Academics
+          </span>
+          <ul
+            *ngIf="activeMenu === 'academics'"
+            class="list-unstyled ps-3 mb-0"
+          >
+            <li>
+              <a
+                class="d-block cursor-pointer"
+                routerLink="/academics"
+                (click)="closePopover()"
+                >MBA in BGSCET</a
+              >
+            </li>
+            <li>
+              <a
+                class="d-block cursor-pointer"
+                routerLink="/academics/explore-program"
+                (click)="closePopover()"
+                >Explore Program</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Campus -->
         <span
           routerLink="/campus"
           routerLinkActive="active-nav"
           [routerLinkActiveOptions]="{ exact: true }"
-          class="d-block mb-2 cursor-pointer w-fit"
+          class="d-block mb-2 cursor-pointer w-sm-fit"
           (click)="closePopover()"
         >
           Campus life
         </span>
+
+        <!-- Contact -->
         <button
           routerLink="/contact"
           class="btn btn-sm btn-dark mt-2 text-nowrap"

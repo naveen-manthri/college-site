@@ -31,7 +31,7 @@ nav-bar-text-admission {
   background-color: white;
   right: 0rem;
   transform: translate(calc(-25% + 0.625rem), -25%);
-  min-width: 10rem;
+  min-width: 15rem;
   z-index: 999;
 }
 

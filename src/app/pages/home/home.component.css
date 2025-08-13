@@ -194,8 +194,9 @@
     font-size: 14px !important;
   }
 
-  .college-icon {
-    width: 15px;
+  .college-icon,
+  .graduation-icon {
+    width: 18px;
     height: 15px;
   }
 

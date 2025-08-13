@@ -5,7 +5,10 @@
   width: 400px;
 }
 @media (max-width: 576px) {
-  .address-bar {
+  .fs-9 {
     font-size: 14px !important;
+  }
+  .footer-img {
+    max-width: 200px;
   }
 }

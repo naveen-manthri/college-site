@@ -1,7 +1,7 @@
-import { Component, HostListener, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
-import { Subscription, filter } from 'rxjs';
-import { AppConstants } from 'src/app/constants/app-constants';
+import { Component, HostListener, OnInit } from "@angular/core";
+import { NavigationEnd, Router } from "@angular/router";
+import { Subscription, filter } from "rxjs";
+import { AppConstants } from "src/app/constants/app-constants";
 
 @Component({
   selector: "app-nav-bar",
@@ -14,31 +14,42 @@ export class NavBarComponent implements OnInit {
   mobile = AppConstants.Mobile;
   mobile2 = AppConstants.Mobile2;
   email = AppConstants.Email;
+  activeMenu: string | null = null;
+  togglingSubmenu = false;
+
+  toggleSubmenu(menu: string) {
+    this.togglingSubmenu = true;
+    this.activeMenu = this.activeMenu === menu ? null : menu;
+  }
 
   private routerSubscription!: Subscription;
-  
+
   ngOnInit(): void {
-    this.updateCanHide(); // initial check
-    
+    this.updateCanHide();
     this.routerSubscription = this.router.events
-    .pipe(filter(event => event instanceof NavigationEnd))
-    .subscribe(() => {
-      this.updateCanHide(); // update on route change
-    });
-    // this.canHide = this.router.url === '/home' && window.innerWidth < 500;
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe(() => {
+        this.updateCanHide();
+      });
+
     this.router.events
-    .pipe(filter(event => event instanceof NavigationEnd))
-    .subscribe(() => this.closePopover());
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe(() => {
+        if (!this.togglingSubmenu) {
+          this.closePopover();
+        }
+        this.togglingSubmenu = false;
+      });
   }
   showPopover = false;
 
-  @HostListener('window:resize', [])
+  @HostListener("window:resize", [])
   onResize() {
     this.updateCanHide(); // update on screen resize
   }
 
   updateCanHide() {
-    this.canHide = this.router.url === '/home' && window.innerWidth < 768;
+    this.canHide = this.router.url === "/home" && window.innerWidth < 768;
   }
 
   ngOnDestroy(): void {

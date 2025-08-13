@@ -30,6 +30,8 @@
   font-weight: 500;
   background-color: #001498;
 }
-.content{
-  width: 80%;
+@media (min-width: 576px) {
+  .content {
+    width: 80%;
+  }
 }

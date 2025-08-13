@@ -27,3 +27,16 @@
   height: auto;
   max-width: 100%;
 }
+@media (max-width: 576px) {
+  .width-100 {
+    width: 100%;
+  }
+  .fs-14 {
+    font-size: 14px !important;
+  }
+}
+@media (min-width: 576px) {
+  .height-800 {
+    height: 800px;
+  }
+}

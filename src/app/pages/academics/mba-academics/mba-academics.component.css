@@ -119,7 +119,7 @@
   background-color: rgba(0, 26, 93, 1);
   color: white;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .h-800 {
     height: 800px !important;
   }

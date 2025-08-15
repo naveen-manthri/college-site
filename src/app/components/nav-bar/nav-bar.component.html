@@ -161,7 +161,11 @@
 
         <!-- About -->
         <div class="mb-2">
-          <span class="d-block cursor-pointer" (click)="toggleSubmenu('about')">
+          <span
+            class="d-block cursor-pointer"
+            routerLink="/about"
+            (click)="toggleSubmenu('about')"
+          >
             About
           </span>
           <ul *ngIf="activeMenu === 'about'" class="list-unstyled ps-3 mb-0">
@@ -187,7 +191,8 @@
         <!-- People -->
         <div class="mb-2">
           <span
-            class="d-block cursor-pointer fw-bold"
+            class="d-block cursor-pointer"
+            routerLink="/people"
             (click)="toggleSubmenu('people')"
           >
             People
@@ -222,7 +227,11 @@
 
         <!-- Academics -->
         <div class="mb-2">
-          <span class="d-block" (click)="toggleSubmenu('academics')">
+          <span
+            class="d-block"
+            (click)="toggleSubmenu('academics')"
+            routerLink="/academics"
+          >
             Academics
           </span>
           <ul

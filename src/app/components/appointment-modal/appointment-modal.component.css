@@ -3,15 +3,19 @@
   font-weight: 600;
 }
 
-.modal-content{
+.modal-content {
   height: 600px;
 }
 @media (max-width: 786px) {
   .heading-text-1 {
     font-size: 18px;
   }
-  .btn-close{
+  .btn-close {
     width: 0.625rem;
     height: 0.625rem;
+  }
+  .modal-content {
+    min-height: 350px;
+    height: 400px; 
   }
 }

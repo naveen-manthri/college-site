@@ -46,3 +46,11 @@
     font-size: 0.625rem;
   }
 }
+@media (max-width: 576px) {
+  .input-label-text {
+    font-size: 0.75rem;
+  }
+  .input-box {
+    font-size: 0.625rem;
+  }
+}

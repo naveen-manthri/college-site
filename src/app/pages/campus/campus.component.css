@@ -24,22 +24,24 @@
   max-width: 100%;
 }
 
-.campus-heading{
+.campus-heading {
   font-size: 2.5rem;
   font-weight: 600;
 }
-.campus-award-list{
+.campus-award-list {
   width: 85%;
 }
-.activities-list{
+.activities-list {
   width: 90%;
 }
-.item{
+.item {
   width: 30%;
 }
-.h-400{
-  height: 400px !important;
-}
-.h-600{
-  height: 600px !important;
+@media (min-width: 576px) {
+  .h-400 {
+    height: 400px !important;
+  }
+  .h-600 {
+    height: 600px !important;
+  }
 }

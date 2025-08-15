@@ -53,8 +53,8 @@
   background-size: cover;
   background-image: url(/assets/external/graduation-icon.png);
   background-repeat: no-repeat;
-  width: 70%;
-  height: 50%;
+  width: 70px;
+  height: 55px;
 }
 .stat-label {
   font-size: 18px;
@@ -186,21 +186,35 @@
     height: 700px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .stat-value {
     padding: 0.625rem;
   }
-  .fs-4 {
+  .home-heading-text-1 {
+    font-size: 24px;
+  }
+  .company-logo {
+    min-width: 250px;
+    width: 250px;
+    height: 130px;
+  }
+  .fs-4,
+  .font-20 {
     font-size: 14px !important;
   }
-
   .college-icon,
   .graduation-icon {
     width: 18px;
     height: 15px;
   }
-
   .stat-label {
     font-size: 8px;
+  }
+  .home-prgm-img {
+    width: 100%;
+  }
+  .college-video {
+    max-width: 300px;
+    max-height: 625px;
   }
 }

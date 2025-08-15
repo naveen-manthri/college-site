@@ -56,29 +56,29 @@
   background-size: cover;
   background-image: url(/assets/external/college-icon.png);
   background-repeat: no-repeat;
-  width: 55%;
-  height: 50%;
+  width: 70px;
+  height: 50px;
 }
 .users-icon {
   background-size: cover;
   background-image: url(/assets/external/users-icon.png);
   background-repeat: no-repeat;
-  width: 60%;
-  height: 45%;
+  width: 70px;
+  height: 50px;
 }
 .experience-icon {
   background-size: cover;
   background-image: url(/assets/external/experience-icon.png);
   background-repeat: no-repeat;
-  width: 55%;
-  height: 50%;
+  width: 70px;
+  height: 50px;
 }
 .graduation-icon {
   background-size: cover;
   background-image: url(/assets/external/graduation-icon.png);
   background-repeat: no-repeat;
-  width: 70%;
-  height: 50%;
+  width: 60px;
+  height: 50px;
 }
 .stat-label {
   font-size: 18px;

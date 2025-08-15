@@ -10,7 +10,7 @@
   <div class="d-flex flex-column gap-5 justify-content-center align-items-center px-5">
     <div class="underline fw-bold fs-1 text-heading-color">Administrative Staff</div>
     <div class="d-flex flex-column justify-content-center" *ngFor="let staff of adminStaffList">
-      <div class="staff d-flex flex-sm-row flex-column gap-5" >
+      <div class="staff d-flex flex-md-row flex-column gap-5 align-items-center align-items-md-start" >
         <img [src]="staff.image" class="rounded shadow-sm staff-img" alt="{{ staff.name }}">
         <div class="d-flex flex-column gap-4">
           <div class="d-flex flex-column gap-2 align-items-center align-items-sm-start text-heading-color">

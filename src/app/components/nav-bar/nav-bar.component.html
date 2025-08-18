@@ -1,10 +1,9 @@
 <div class="nav-head d-flex flex-column position-relative">
   <!-- Contact Info Top -->
-  <!-- *ngIf="!canHide" -->
   <div
     class="d-flex justify-content-center align-items-center p-3 bg-brinjal-color"
   >
-    <div class="fs-5-sm fs-9 text-white d-flex flex-md-row text-nowrap">
+    <div class="fs-sm-5 fs-9 text-white d-flex flex-md-row text-nowrap">
       <div>
         Contact:
         <a [href]="'tel:' + mobile" class="text-decoration-none text-white"
@@ -12,7 +11,6 @@
         >
 
         <a
-          *ngIf="!canHide"
           [href]="'tel:' + mobile2"
           class="text-decoration-none text-white"
           >, +{{ mobile2 }}</a
@@ -282,7 +280,7 @@
 
   <div class="p-3 bg-brown-color">
     <div class="d-flex w-100 position-relative overflow-hidden">
-      <span class="fs-5 text-nowrap text-white scroll-text"
+      <span class="fs-sm-5 fs-9 text-nowrap text-white scroll-text"
         >Advertisement : Admission open for 2025-2026 by BGSCET MBA
       </span>
     </div>

@@ -10,7 +10,6 @@ import { AppConstants } from "src/app/constants/app-constants";
 })
 export class NavBarComponent implements OnInit {
   constructor(public router: Router) {}
-  canHide: boolean = false;
   mobile = AppConstants.Mobile;
   mobile2 = AppConstants.Mobile2;
   email = AppConstants.Email;
@@ -25,13 +24,6 @@ export class NavBarComponent implements OnInit {
   private routerSubscription!: Subscription;
 
   ngOnInit(): void {
-    this.updateCanHide();
-    this.routerSubscription = this.router.events
-      .pipe(filter((event) => event instanceof NavigationEnd))
-      .subscribe(() => {
-        this.updateCanHide();
-      });
-
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => {
@@ -42,15 +34,6 @@ export class NavBarComponent implements OnInit {
       });
   }
   showPopover = false;
-
-  @HostListener("window:resize", [])
-  onResize() {
-    this.updateCanHide(); // update on screen resize
-  }
-
-  updateCanHide() {
-    this.canHide = this.router.url === "/home" && window.innerWidth < 768;
-  }
 
   ngOnDestroy(): void {
     this.routerSubscription?.unsubscribe();

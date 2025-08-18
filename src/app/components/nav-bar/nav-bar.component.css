@@ -131,11 +131,11 @@ nav-bar-text-admission {
 .fs-8 {
   font-size: 0.75rem;
 }
-.fs-9 {
-  font-size: 0.625rem !important;
-}
 @media (max-width: 576px) {
   .college-logo {
     max-width: 200px;
+  }
+  .fs-9 {
+    font-size: 0.625rem !important;
   }
 }

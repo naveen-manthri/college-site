@@ -11,6 +11,9 @@
 .btn-primary-pink:hover {
   background-color: #d12a7d;
 }
-.fs-9 {
-  font-size: 14px !important;
+
+@media (max-width: 576px) {
+  .fs-9 {
+    font-size: 14px !important;
+  }
 }

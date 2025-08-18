@@ -131,6 +131,9 @@ nav-bar-text-admission {
 .fs-8 {
   font-size: 0.75rem;
 }
+.fs-sm-5{
+  font-size: 1.25rem !important;
+}
 @media (max-width: 576px) {
   .college-logo {
     max-width: 200px;

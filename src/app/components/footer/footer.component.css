@@ -11,4 +11,7 @@
   .footer-img {
     max-width: 200px;
   }
+  .w-400 {
+    max-width: 350px;
+  }
 }

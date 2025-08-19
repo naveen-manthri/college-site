@@ -40,4 +40,11 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
+  .faculty-img{
+    width: 320px;
+    height: 350px;
+  }
+  .faculty{
+    align-items: center;
+  }
 }

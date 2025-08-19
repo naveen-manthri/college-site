@@ -42,4 +42,12 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
+  .staff-img,
+  .student-img {
+    width: 320px;
+    height: 350px;
+  }
+  .student {
+    width: 300px;
+  }
 }

@@ -162,7 +162,12 @@
   .carousel-img-2 {
     transform: translateY(0px) !important;
   }
-  .home-image-3{
+  .home-image-3 {
     background-position-y: -10px;
+  }
+}
+@media (max-width: 576px) {
+  .carousel-img-2 {
+    width: 150px;
   }
 }

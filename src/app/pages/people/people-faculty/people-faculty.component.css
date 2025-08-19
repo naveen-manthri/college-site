@@ -33,6 +33,9 @@
   width: 400px;
   height: 500px;
 }
+.fs-6{
+  font-size: 1rem !important;
+}
 @media (max-width: 576px) {
   .faculty-main-img {
     height: 135px;
@@ -47,5 +50,10 @@
   }
   .faculty{
     align-items: center;
+  }
+}
+@media (min-width: 992px) {
+  .fs-lg-3 {
+    font-size: 1.75rem !important;
   }
 }

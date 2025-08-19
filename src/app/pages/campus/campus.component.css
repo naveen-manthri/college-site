@@ -35,20 +35,32 @@
   width: 90%;
 }
 .item {
-  width: 30%;
+  width: 45%;
 }
-@media (min-width: 576px) {
+/* .h-400 {
+  height: 200px !important;
+}
+.h-600 {
+  height: 400px !important;
+} */
+@media (max-width: 576px) {
+  .campus-img {
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 992px) {
+  .item {
+    width: 30%;
+  }
   .h-400 {
     height: 400px !important;
   }
   .h-600 {
     height: 600px !important;
   }
-}
-@media (max-width: 576px) {
-  .campus-img {
-    height: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
+  .w-lg-50{
+    width: 50% !important;
   }
 }

@@ -1,7 +1,7 @@
 <div class="home position-relative overflow-hidden">
   <div
     class="d-flex transition"
-    style="height: 70vh"
+    style="height: 70vh; background: #fdfaf3"
     [style.transform]="
       'translateX(-' + currentIndex * (100 / images.length) + '%)'
     "
@@ -106,7 +106,7 @@
             </button>
           </div>
         </div>
-        <div class="d-flex gap-5 px-2 px-sm-5">
+        <div class="d-flex gap-3 gap-sm-5 px-2 px-sm-5 carousel-img-wrapper">
           <img
             src="assets/external/carousel-img-2.1.png"
             class="carousel-img-2"
@@ -114,7 +114,7 @@
           />
           <img
             src="assets/external/carousel-img-2.2.png"
-            class="carousel-img-2 d-none d-sm-block"
+            class="carousel-img-2"
             style="transform: translateY(-30px)"
           />
         </div>
@@ -124,12 +124,12 @@
     <div class="flex-shrink-0" [style.width.%]="100 / 3">
       <div class="home-image-3 d-flex w-100 h-100 p-2">
         <div class="d-flex flex-column gap-2 p-2 align-items-center w-100">
-          <div class="fs-2 fw-bold text-white">
+          <div class="fs-2 fw-bold text-white d-none d-sm-block">
             Admission open for 2025-26 PGCET COLLEGE CODE - B099
           </div>
           <a
             routerLink="/academics/explore-program"
-            class="btn-brown text-white text-decoration-none"
+            class="btn-brown text-white text-decoration-none d-none d-sm-block"
           >
             Explore our program
           </a>

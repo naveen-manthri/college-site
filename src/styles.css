@@ -689,6 +689,9 @@ body {
   .fs-9 {
     font-size: 14px !important;
   }
+  .whatsapp-fixed-icon img{
+    width: 50px !important;
+  }
 }
 @media (min-width: 768px) {
   .w-md-100 {

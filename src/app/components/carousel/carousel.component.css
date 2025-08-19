@@ -160,14 +160,31 @@
     height: 16px !important;
   }
   .carousel-img-2 {
-    transform: translateY(0px) !important;
+    /* transform: translateY(0px) !important; */
   }
   .home-image-3 {
     background-position-y: -10px;
   }
 }
 @media (max-width: 576px) {
+  .carousel-img-wrapper {
+    position: relative;
+    top: -75px;
+  }
   .carousel-img-2 {
-    width: 150px;
+    width: 70px;
+    height: 170px;
+  }
+  .carousel-img-1 {
+    width: 180px;
+    height: 250px;
+  }
+  .circle-bg {
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+  }
+  .home-image-3 {
+    background-position-y: -130px;
   }
 }

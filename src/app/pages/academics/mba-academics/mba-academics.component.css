@@ -152,7 +152,7 @@
 }
 @media (max-width: 576px) {
   .academics-img {
-    height: 165px;
+    height: 125px;
     background-size: contain;
     background-repeat: no-repeat;
   }

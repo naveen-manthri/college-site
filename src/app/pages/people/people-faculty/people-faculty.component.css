@@ -35,10 +35,11 @@
 }
 @media (max-width: 576px) {
   .faculty-main-img {
-    height: 175px;
+    height: 135px;
     margin-top: 0%;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
   }
   .faculty-img{
     width: 320px;

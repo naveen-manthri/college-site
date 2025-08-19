@@ -38,9 +38,10 @@
 }
 @media (max-width: 576px) {
   .staff-main-img {
-    height: 160px;
+    height: 120px;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
   }
   .staff-img,
   .student-img {

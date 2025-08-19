@@ -47,7 +47,7 @@
 }
 @media (max-width: 576px) {
   .campus-img {
-    height: 160px;
+    height: 120px;
     background-size: contain;
     background-repeat: no-repeat;
   }

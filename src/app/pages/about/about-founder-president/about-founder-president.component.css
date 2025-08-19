@@ -37,5 +37,11 @@
   .h-500 {
     height: 500px;
   }
-  
+}
+@media (max-width: 576px) {
+  .founder-hero {
+    height: 160px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }

@@ -35,3 +35,10 @@
     width: 80%;
   }
 }
+@media (max-width: 576px) {
+  .director-section {
+    height: 160px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

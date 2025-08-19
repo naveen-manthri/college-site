@@ -33,3 +33,11 @@
   width: 400px;
   height: 500px;
 }
+@media (max-width: 576px) {
+  .faculty-main-img {
+    height: 175px;
+    margin-top: 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

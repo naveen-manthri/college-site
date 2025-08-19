@@ -10,9 +10,7 @@
           >+{{ mobile }}</a
         >
 
-        <a
-          [href]="'tel:' + mobile2"
-          class="text-decoration-none text-white"
+        <a [href]="'tel:' + mobile2" class="text-decoration-none text-white"
           >, +{{ mobile2 }}</a
         >
       </div>
@@ -33,7 +31,10 @@
     <div class="d-flex justify-content-between align-items-center w-100">
       <!-- Logo -->
       <div routerLink="/home" class="cursor-pointer">
-        <img src="assets/external/college-logo.png" class="college-logo w-100"/>
+        <img
+          src="assets/external/college-logo.png"
+          class="college-logo w-100"
+        />
       </div>
 
       <!-- Desktop Navigation -->
@@ -168,19 +169,22 @@
           </span>
           <ul *ngIf="activeMenu === 'about'" class="list-unstyled ps-3 mb-0">
             <li>
-              <a
-                class="d-block cursor-pointer"
+              <span
+                class="d-block cursor-pointer text-decoration-none"
                 routerLink="/about"
+                routerLinkActive="active-nav"
+                [routerLinkActiveOptions]="{ exact: true }"
                 (click)="closePopover()"
-                >About Math</a
+                >About Math</span
               >
             </li>
             <li>
-              <a
-                class="d-block cursor-pointer"
+              <span
+                class="d-block cursor-pointer text-decoration-none"
+                routerLinkActive="active-nav"
                 routerLink="/about/founder-president"
                 (click)="closePopover()"
-                >Founder President</a
+                >Founder President</span
               >
             </li>
           </ul>
@@ -197,27 +201,31 @@
           </span>
           <ul *ngIf="activeMenu === 'people'" class="list-unstyled ps-3 mb-0">
             <li>
-              <a
-                class="d-block cursor-pointer"
+              <span
+                class="d-block cursor-pointer text-decoration-none"
+                routerLinkActive="active-nav"
                 routerLink="/people"
+                [routerLinkActiveOptions]="{ exact: true }"
                 (click)="closePopover()"
-                >Director's Message</a
+                >Director's Message</span
               >
             </li>
             <li>
-              <a
-                class="d-block cursor-pointer"
+              <span
+                class="d-block cursor-pointer text-decoration-none"
+                routerLinkActive="active-nav"
                 routerLink="/people/faculty"
                 (click)="closePopover()"
-                >Faculty</a
+                >Faculty</span
               >
             </li>
             <li>
-              <a
-                class="d-block cursor-pointer"
+              <span
+                class="d-block cursor-pointer text-decoration-none"
+                routerLinkActive="active-nav"
                 routerLink="/people/administrative-staff"
                 (click)="closePopover()"
-                >Administrative Staff</a
+                >Administrative Staff</span
               >
             </li>
           </ul>
@@ -237,19 +245,22 @@
             class="list-unstyled ps-3 mb-0"
           >
             <li>
-              <a
-                class="d-block cursor-pointer"
+              <span
+                class="d-block cursor-pointer text-decoration-none"
+                routerLinkActive="active-nav"
                 routerLink="/academics"
                 (click)="closePopover()"
-                >MBA in BGSCET</a
+                [routerLinkActiveOptions]="{ exact: true }"
+                >MBA in BGSCET</span
               >
             </li>
             <li>
-              <a
-                class="d-block cursor-pointer"
+              <span
+                class="d-block cursor-pointer text-decoration-none"
+                routerLinkActive="active-nav"
                 routerLink="/academics/explore-program"
                 (click)="closePopover()"
-                >Explore Program</a
+                >Explore Program</span
               >
             </li>
           </ul>
@@ -269,7 +280,7 @@
         <!-- Contact -->
         <button
           routerLink="/contact"
-          class="btn btn-sm btn-dark mt-2 text-nowrap"
+          class="btn btn-sm p-0 text-nowrap"
           (click)="closePopover()"
         >
           Contact Me

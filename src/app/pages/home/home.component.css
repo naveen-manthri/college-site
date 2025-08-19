@@ -192,9 +192,9 @@
     font-size: 24px;
   }
   .company-logo {
-    min-width: 250px;
-    width: 250px;
-    height: 130px;
+    min-width: 120px;
+    width: 120px;
+    height: 80px;
   }
   .fs-4,
   .font-20 {
@@ -214,5 +214,11 @@
   .college-video {
     max-width: 300px;
     max-height: 625px;
+  }
+}
+@media (max-width: 576px) {
+  .arrow {
+    font-size: 25px !important;
+    height: 20px;
   }
 }

@@ -150,3 +150,10 @@
     font-size: 8px;
   }
 }
+@media (max-width: 576px) {
+  .academics-img {
+    height: 165px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

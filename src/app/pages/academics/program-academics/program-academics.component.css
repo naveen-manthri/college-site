@@ -11,8 +11,8 @@
 .bg-primary-blue {
   background-color: #001a5d;
 }
-.bg-primary-brown{
-  background-color: #7B0053;
+.bg-primary-brown {
+  background-color: #7b0053;
 }
 .whatsapp-fixed-icon {
   position: fixed;
@@ -27,7 +27,7 @@
   max-width: 100%;
 }
 
-.academics-heading{
+.academics-heading {
   font-size: 2.5rem;
   font-weight: 600;
   border-bottom: solid 4px;
@@ -39,7 +39,18 @@
   padding: 8px 16px;
   color: white;
 }
-.testimonial-img{
+.testimonial-img {
   max-width: 425px;
   max-height: 450px;
+}
+@media (max-width: 576px) {
+  .academics-img {
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .arrow{
+    font-size: 25px !important;
+    height: 20px;
+  }
 }

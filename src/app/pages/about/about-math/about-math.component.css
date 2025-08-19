@@ -34,6 +34,11 @@
   .fs-14 {
     font-size: 14px !important;
   }
+  .about-hero {
+    height: 165px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 @media (min-width: 576px) {
   .height-800 {

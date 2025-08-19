@@ -3,6 +3,7 @@
 }
 
 .active-nav {
+  width: fit-content;
   font-weight: 600;
   border-bottom: 0.25rem solid black;
 }

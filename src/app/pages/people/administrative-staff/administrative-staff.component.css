@@ -1,4 +1,4 @@
-.text-primary-blue{
+.text-primary-blue {
   color: #021175;
 }
 
@@ -19,20 +19,27 @@
   background-size: cover;
   background-image: url(/assets/external/admin-group.png);
 }
-.staff-heading{
+.staff-heading {
   font-size: 2.5rem;
   font-weight: 600;
   color: #001a5d;
   border-bottom: 4px solid;
 }
-.staff-img{
+.staff-img {
   width: 400px;
   height: 500px;
 }
-.student-img{
+.student-img {
   width: 400px;
   height: 500px;
 }
-.student{
+.student {
   width: 400px;
+}
+@media (max-width: 576px) {
+  .staff-main-img {
+    height: 160px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }

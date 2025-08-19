@@ -677,10 +677,10 @@ body {
 .transition-zoomin-img:hover {
   transform: scale(1.1);
 }
+.text-justify {
+  text-align: justify !important;
+}
 @media (min-width: 576px) {
-  .text-justify {
-    text-align: justify !important;
-  }
   .w-sm-fit {
     width: fit-content !important;
   }

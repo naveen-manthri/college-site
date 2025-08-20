@@ -28,13 +28,21 @@
             </button>
           </div>
         </div>
-        <div>
-          <div class="position-absolute top-0">
-            <img
-              src="https://cdn.prod.website-files.com/648b65b7aede9cf8e00549cf/680bf2866872bb33fd6a50c6_avatar-collection-ucanwest.png"
-              class="img-fluid top-badge"
-            />
-            <div class="py-3 fw-bold text-center">1000+ Students</div>
+        <div class="position-relative">
+          <div
+            class="position-relative position-sm-absolute top-30 img-fluid-wrapper"
+          >
+            <div class="multiple-wrapper">
+              <img
+                src="https://cdn.prod.website-files.com/648b65b7aede9cf8e00549cf/680bf2866872bb33fd6a50c6_avatar-collection-ucanwest.png"
+                class="img-fluid top-badge"
+              />
+            </div>
+            <div
+              class="py-1 py-sm-3 fw-bold text-center students d-none d-sm-block"
+            >
+              1000+ Students
+            </div>
           </div>
           <img
             src="assets/external/carousel-img-1.png"
@@ -94,12 +102,12 @@
           <div class="d-flex flex-wrap flex-sm-nowrap gap-4">
             <a
               routerLink="/academics/explore-program"
-              class="bg-brown-color rounded-2 px-4 py-3 fs-4 fs-9 fw-bold text-white text-decoration-none"
+              class="bg-brown-color rounded-2 px-4 py-3 fs-4 fs-9 fw-bold text-white text-sm-nowrap text-decoration-none"
             >
               Explore our program
             </a>
             <button
-              class="rounded-2 p-3 px-sm-4 py-sm-3 fs-4 fs-9 fw-bold text-white"
+              class="rounded-2 p-3 px-sm-4 py-sm-3 fs-4 fs-9 fw-bold text-white text-sm-nowrap"
               style="background: #572f81"
             >
               Download Brochure

@@ -680,6 +680,9 @@ body {
 .text-justify {
   text-align: justify !important;
 }
+.w-fit{
+  width: fit-content !important;
+}
 @media (min-width: 576px) {
   .w-sm-fit {
     width: fit-content !important;

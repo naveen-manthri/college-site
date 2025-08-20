@@ -143,7 +143,9 @@
 }
 .top-badge {
   width: 160px;
-  transform: translate(0px, 25%);
+}
+.top-10{
+  top: -10px !important;
 }
 @media (max-width: 576px) {
   .circle-bg {

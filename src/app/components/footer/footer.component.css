@@ -18,3 +18,8 @@
     max-width: 310px;
   }
 }
+@media (min-width: 1600px) {
+  .fs-5 {
+    font-size: 1.5rem !important;
+  }
+}

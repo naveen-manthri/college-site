@@ -156,3 +156,20 @@
     transform: translate(0, 0);
   }
 }
+@media (min-width: 1400px) {
+  .fs-1{
+    font-size: 3.5rem !important;
+  }
+  .fs-2{
+    font-size: 2.5rem !important;
+  }
+  .fs-4{
+    font-size: 2rem !important;
+  }
+  .fs-5{
+    font-size: 1.5rem !important;
+  }
+  .btn-brown {
+    font-size: 1.5rem !important;
+  }
+}

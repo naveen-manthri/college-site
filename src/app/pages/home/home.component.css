@@ -48,6 +48,13 @@
   width: 40px;
   height: 40px;
 }
+.university-icon {
+  background-size: cover;
+  background-image: url(/assets/external/university-icon.png);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
 .graduation-icon {
   background-size: cover;
   background-image: url(/assets/external/graduation-icon.png);
@@ -209,6 +216,7 @@
     font-size: 14px !important;
   }
   .college-icon,
+  .university-icon,
   .graduation-icon {
     width: 18px;
     height: 15px;

@@ -159,6 +159,35 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
+  
+  .grad-student-icon {
+    background-size: cover;
+    background-image: url(/assets/external/grad-student-icon.png);
+    background-repeat: no-repeat;
+    width: 120px !important;
+    height: 60px !important;
+  }
+  .graduation-icon-2 {
+    background-size: cover;
+    background-image: url(/assets/external/graduation-icon-2.png);
+    background-repeat: no-repeat;
+    width: 160px !important;
+    height: 60px !important;
+  }
+  .faculty-icon {
+    background-size: cover;
+    background-image: url(/assets/external/faculty-icon.png);
+    background-repeat: no-repeat;
+    width: 120px !important;
+    height: 50px !important;
+  }
+  .holistic-learn-icon {
+    background-size: cover;
+    background-image: url(/assets/external/holistic-learn-icon.png);
+    background-repeat: no-repeat;
+    width: 150px !important;
+    height: 50px !important;
+  }
 }
 @media (min-width: 576px) {
   .h-60{

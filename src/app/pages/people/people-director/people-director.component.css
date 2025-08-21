@@ -44,4 +44,9 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
+  .director-photo{
+    width: 280px !important;
+    height: 300px !important;
+    align-self: center;
+  }
 }

@@ -54,3 +54,8 @@
     height: 20px;
   }
 }
+@media (min-width: 576px) {
+  .h-60{
+    height: 60vh !important;
+  }
+}

@@ -37,6 +37,9 @@
   .h-500 {
     height: 500px;
   }
+  .h-60{
+    height: 60vh !important;
+  }
 }
 @media (max-width: 576px) {
   .founder-hero {

@@ -44,4 +44,7 @@
   .height-800 {
     height: 800px;
   }
+  .h-60{
+    height: 60vh !important;
+  }
 }

@@ -154,12 +154,15 @@
   .stat-label {
     font-size: 8px;
   }
-}
-@media (max-width: 576px) {
   .academics-img {
     height: 125px;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+}
+@media (min-width: 576px) {
+  .h-60{
+    height: 60vh !important;
   }
 }
 @media (max-width: 768px) {

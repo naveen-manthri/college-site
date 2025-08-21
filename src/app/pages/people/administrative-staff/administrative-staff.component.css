@@ -60,3 +60,8 @@
     font-size: 1.75rem !important;
   }
 }
+@media (min-width: 576px) {
+  .h-60{
+    height: 60vh !important;
+  }
+}

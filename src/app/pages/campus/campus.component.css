@@ -43,11 +43,9 @@
 .h-600 {
   height: 400px !important;
 } */
-@media (max-width: 576px) {
-  .campus-img {
-    height: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
+@media (min-width: 576px) {
+  .h-60{
+    height: 60vh !important;
   }
 }
 @media (min-width: 992px) {

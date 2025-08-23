@@ -1,21 +1,6 @@
 .text-primary-blue {
   color: #001a5d;
 }
-.bg-primary-blue {
-  background-color: #001a5d;
-}
-
-.home-profile-bottom {
-  background-color: #083375;
-}
-
-.btn-blue {
-  font-size: 1rem;
-  border-radius: 4px;
-  padding: 8px 16px;
-  background-color: rgba(0, 26, 93, 1);
-  color: white;
-}
 
 .whatsapp-fixed-icon {
   position: fixed;
@@ -67,14 +52,6 @@
   font-weight: 500;
 }
 
-.home-institute-info {
-  font-size: 20px;
-  font-weight: 400;
-  color: #4c4c4c;
-  line-height: 1.7;
-  text-align: justify;
-}
-
 .students-img {
   background-size: cover;
   background-image: linear-gradient(
@@ -113,16 +90,6 @@
   width: 500px;
 }
 
-.home-prgm-content {
-  font-size: 1.5rem;
-  text-align: justify;
-  line-height: 1.7;
-}
-
-.home-industry-list-item {
-  width: 40%;
-}
-
 .btn-grey {
   font-weight: 500;
   background-color: #f0eded;
@@ -143,12 +110,7 @@
 .text-color-pink {
   color: rgba(238, 48, 145, 1);
 }
-/* .h-450 {
-  height: 450px;
-} */
-/* .h-700 {
-  height: 700px;
-} */
+
 .logo-marquee-wrapper {
   overflow: hidden;
   position: relative;
@@ -161,22 +123,6 @@
   gap: 3rem;
   animation: scroll-left 50s linear infinite;
   will-change: transform;
-}
-
-/* .logo-marquee-track {
-  display: flex;
-  width: max-content;
-  animation: scroll-right-to-left 40s linear infinite;
-} */
-
-/* Right to Left animation */
-@keyframes scroll-right-to-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
 }
 
 @keyframes scroll-left {
@@ -237,9 +183,6 @@
   .arrow {
     font-size: 25px !important;
     height: 20px;
-  }
-  .width-100 {
-    width: 100%;
   }
   .home-heading-text-1 {
     font-size: 16px;

@@ -14,17 +14,7 @@
   height: auto;
   max-width: 100%;
 }
-.staff-main-img {
-  height: 60vh;
-  background-size: cover;
-  background-image: url(/assets/external/admin-group.png);
-}
-.staff-heading {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #001a5d;
-  border-bottom: 4px solid;
-}
+
 .staff-img {
   width: 400px;
   height: 500px;
@@ -40,12 +30,6 @@
   font-size: 1rem !important;
 }
 @media (max-width: 576px) {
-  .staff-main-img {
-    height: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
   .staff-img,
   .student-img {
     width: 280px;

@@ -10,21 +10,6 @@
   height: auto;
   max-width: 100%;
 }
-.director-section {
-  height: 60vh;
-  background-size: cover;
-  background-position: center;
-  background-image: url(/assets/external/director-message.png);
-}
-
-.people-heading {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #001a5d;
-}
-.bg-primary-blue {
-  background-color: #001a5d;
-}
 
 .btn-blue {
   font-weight: 500;
@@ -39,11 +24,6 @@
   }
 }
 @media (max-width: 576px) {
-  .director-section {
-    height: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
   .director-photo{
     width: 280px !important;
     height: 300px !important;

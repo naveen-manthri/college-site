@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser'
-import { MatDialog } from '@angular/material/dialog'
 
 @Component({
   selector: 'app-about',
@@ -9,7 +8,7 @@ import { MatDialog } from '@angular/material/dialog'
 })
 export class AboutComponent implements OnInit {
 
-  constructor(private title: Title, private dialog: MatDialog) {
+  constructor(private title: Title) {
     this.title.setTitle('About')
   }
 

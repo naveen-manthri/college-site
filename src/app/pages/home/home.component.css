@@ -156,17 +156,18 @@
 }
 
 .logo-marquee {
+  padding-left: 100%;
   display: flex;
   gap: 3rem;
-  animation: scroll-right-to-left 20s linear infinite;
+  animation: scroll-left 50s linear infinite;
   will-change: transform;
 }
 
-.logo-marquee-track {
+/* .logo-marquee-track {
   display: flex;
   width: max-content;
   animation: scroll-right-to-left 40s linear infinite;
-}
+} */
 
 /* Right to Left animation */
 @keyframes scroll-right-to-left {

@@ -42,12 +42,13 @@ export class PeopleFacultyComponent implements OnInit {
       image: 'assets/external/Faculty-5.png',
       content: `Sandhya is a dedicated research scholar with a strong academic background, currently pursuing her Doctor of Philosophy as a Part-Time Research Scholar at the NIT Andhra Pradesh. She holds a Master of Business Administration in HR and Marketing from NIT Karnataka, and a Master of Technology in Power and Industrial Drives from JNTU Anantapur. Sandhya’s software skills include proficiency in Python, R language, and Tableau, and she is known for her innovative teaching style that emphasizes practical knowledge and current trends. Sandhya’s profile reflects a blend of technical expertise, academic excellence, and a forward-thinking approach to education and research.`
     },
-    // {
-    //   name: 'Prof. Shalini P. R',
-    //   designation: 'Assistant Professor',
-    //   image: 'assets/external/Faculty-6.png',
-    //   content: `Shalini is an MBA in Finance graduate with a solid background in banking operations and e-learning development. Academically, she holds a Master of Business Administration in Finance from JSS Centre for Management Studies and a Bachelor’s in Business Management from MMK and SDM College. Her technical skills include proficiency in Finacle Banking Software, MS Office, and Tally 9.`
-    // },
+    {
+      name: 'Mr. Kiran S',
+      designation: 'Assistant Professor',
+      image: 'assets/external/Faculty-6.png',
+      content: `Mr. Kiran S is an accomplished academician with over 9+ year of experience in management education, specializing in Finance and General Management. He is currently an Assistant Professor at BGS College of Engineering & Technology, Bengaluru, and is pursuing a Ph.D. in Finance at VTU, Belagavi, focusing on merger performance in the Indian banking sector. He is also UGC-NET qualified and holds degrees in MBA (Finance), M. Com, and PGDIBO.
+      He has taught various finance and management subjects and held academic roles at various institutions, contributing to ERP, exam coordination, NSS, and student development. He has published in Scopus and UGC-approved journals and presented at conferences including GBRC at IIFT, New Delhi. He is also a life member of professional bodies like the Indian Accounting Association and SSHRA. Known for his research focus, leadership, and commitment to student success, He brings both academic rigor and administrative excellence to the institutions he serves.`
+    },
     {
       name: 'Prof. Suneel Rao T.R',
       designation: 'Assistant Professor',

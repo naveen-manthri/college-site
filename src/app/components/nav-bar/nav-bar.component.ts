@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { NavigationEnd, Router } from "@angular/router";
 import { Subscription, filter } from "rxjs";
 import { AppConstants } from "src/app/constants/app-constants";

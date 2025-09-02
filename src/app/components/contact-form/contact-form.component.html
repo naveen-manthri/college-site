@@ -1,48 +1,22 @@
-<form
-  method="POST"
-  action="https://formsubmit.co/devdeskweb@gmail.com"
-  class="d-none"
-  #hiddenForm
->
-  <input
-    type="hidden"
-    name="_subject"
-    value="New Admission Request - BGSCET-MBA"
-  />
+<form method="POST" action="https://formsubmit.co/devdeskweb@gmail.com" class="d-none" #hiddenForm>
+  <input type="hidden" name="_subject" value="New Admission Request - BGSCET-MBA" />
   <input type="hidden" name="_template" value="table" />
   <input type="hidden" name="_captcha" value="false" />
   <input type="hidden" name="_next" [value]="nextRedirectUrl" />
-  <input
-    type="hidden"
-    name="Message"
-    value="Dear Management, you have received a new admission request from a user."
-  />
-  <input
-    type="hidden"
-    name="First Name"
-    [value]="contactForm.value.firstName"
-  />
+  <input type="hidden" name="Message" value="Dear Management, you have received a new admission request from a user." />
+  <input type="hidden" name="First Name" [value]="contactForm.value.firstName" />
   <input type="hidden" name="Last Name" [value]="contactForm.value.lastName" />
   <input type="hidden" name="Email" [value]="contactForm.value.email" />
   <input type="hidden" name="Mobile" [value]="contactForm.value.mobile" />
   <input type="hidden" name="Course" [value]="contactForm.value.course" />
 </form>
 
-<form
-  [formGroup]="contactForm"
-  (ngSubmit)="onSubmit()"
-  class="form-head d-flex flex-column gap-4 pe-3 pb-3 pe-sm-4 pb-sm-5"
->
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()"
+  class="form-head d-flex flex-column gap-4 pe-3 pb-3 pe-sm-4 pb-sm-5">
   <div class="d-flex flex-column gap-2">
     <label class="input-label-text">First Name*</label>
     <div class="d-flex align-items-center rounded-2 border px-3 py-2">
-      <input
-        required
-        type="text"
-        class="input-box"
-        formControlName="firstName"
-        placeholder="John"
-      />
+      <input required type="text" class="input-box" formControlName="firstName" placeholder="John" />
     </div>
     <div *ngIf="submitted && f.firstName.errors" class="text-danger">
       First name is required.
@@ -52,13 +26,7 @@
   <div class="d-flex flex-column gap-2">
     <label class="input-label-text">Last Name*</label>
     <div class="d-flex align-items-center rounded-2 border px-3 py-2">
-      <input
-        required
-        type="text"
-        class="input-box"
-        formControlName="lastName"
-        placeholder="Lewis"
-      />
+      <input required type="text" class="input-box" formControlName="lastName" placeholder="Lewis" />
     </div>
     <div *ngIf="submitted && f.lastName.errors" class="text-danger">
       Last name is required.
@@ -68,13 +36,7 @@
   <div class="d-flex flex-column gap-2">
     <label class="input-label-text">Course*</label>
     <div class="d-flex align-items-center rounded-2 border px-3 py-2">
-      <input
-        required
-        type="text"
-        class="input-box"
-        formControlName="course"
-        placeholder="MBA"
-      />
+      <input required type="text" class="input-box" formControlName="course" placeholder="MBA" />
     </div>
     <div *ngIf="submitted && f.course.errors" class="text-danger">
       Course is required.
@@ -85,13 +47,7 @@
     <div class="d-flex flex-column gap-2 flex-grow-1">
       <label class="input-label-text">Email*</label>
       <div class="d-flex align-items-center rounded-2 border px-3 py-2">
-        <input
-          required
-          type="email"
-          class="input-box"
-          formControlName="email"
-          placeholder="john@example.com"
-        />
+        <input required type="email" class="input-box" formControlName="email" placeholder="john@example.com" />
       </div>
       <div *ngIf="submitted && f.email.errors" class="text-danger">
         <div *ngIf="f.email.errors.required">Email is required.</div>
@@ -101,14 +57,8 @@
     <div class="d-flex flex-column gap-2 flex-grow-1">
       <label class="input-label-text">Mobile*</label>
       <div class="d-flex align-items-center rounded-2 border px-3 py-2">
-        <input
-          required
-          type="number"
-          class="input-box"
-          formControlName="mobile"
-          placeholder="9845350214"
-          maxlength="10"
-        />
+        <input required type="number" class="input-box" formControlName="mobile" placeholder="9845350214"
+          maxlength="10" />
       </div>
       <div *ngIf="submitted && f.mobile.errors" class="text-danger">
         Mobile is required.
@@ -118,13 +68,7 @@
 
   <div class="d-flex flex-column gap-2">
     <div class="d-flex gap-2 align-items-center">
-      <input
-        required
-        class="border rounded-1 checkbox"
-        type="checkbox"
-        formControlName="terms"
-        id="terms"
-      />
+      <input required class="border rounded-1 checkbox" type="checkbox" formControlName="terms" id="terms" />
       <label class="check-label-text" for="terms">
         By clicking submit you agree to our terms and privacy policy.
       </label>

@@ -7,15 +7,15 @@
     <div class="underline fw-bold fs-1 text-heading-color">Faculty</div>
     <div class="d-flex flex-column justify-content-center px-sm-5 px-3" *ngFor="let faculty of facultyList">
       <div class="d-flex flex-column flex-md-row gap-5">
-        <img [src]="faculty.image" class="rounded shadow-sm faculty-img" alt="{{ faculty.name }}" />
+        <img [src]="faculty.image" class="rounded shadow-sm faculty-img align-self-center align-self-md-start" alt="{{ faculty.name }}" />
         <div class="d-flex flex-column gap-3">
-          <div class="d-flex flex-column align-items-center align-items-sm-start text-heading-color text-center">
+          <div class="d-flex flex-column align-items-center align-items-md-start text-heading-color text-center">
             <div class="fw-bold fs-1">{{ faculty.name }}</div>
-            <div class="fs-6 fs-lg-3">
+            <div class="fs-4 fs-lg-3">
               <em>{{ faculty.designation }}</em>
             </div>
           </div>
-          <div class="text-justify fs-4 fs-9">{{ faculty.content }}</div>
+          <div class="text-justify fs-5 fs-9" [innerHTML]="faculty.content"></div>
         </div>
       </div>
     </div>

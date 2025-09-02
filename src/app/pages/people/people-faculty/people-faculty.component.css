@@ -33,3 +33,8 @@
     height: 60vh !important;
   }
 }
+@media (min-width: 1200px) {
+  .fs-5{
+    font-size: 1.4rem !important;
+  }
+}

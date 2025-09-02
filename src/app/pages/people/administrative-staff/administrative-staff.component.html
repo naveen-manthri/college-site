@@ -8,12 +8,12 @@
     <div class="d-flex flex-column justify-content-center" *ngFor="let staff of adminStaffList">
       <div class="staff d-flex flex-md-row flex-column gap-4 gap-sm-5 align-items-center align-items-md-start">
         <img [src]="staff.image" class="rounded shadow-sm staff-img" alt="{{ staff.name }}">
-        <div class="d-flex flex-column gap-4">
-          <div class="d-flex flex-column gap-2 align-items-center align-items-sm-start text-heading-color text-center">
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex flex-column align-items-center align-items-md-start text-heading-color text-center">
             <div class="fw-bold fs-1">{{ staff.name }}</div>
             <div class="fs-6 fs-lg-3 text-center"><em>{{ staff.designation }}</em></div>
           </div>
-          <div class="text-justify fs-4 fs-9">{{ staff.content }}</div>
+          <div class="text-justify fs-4 fs-9" [innerHTML]="staff.content"></div>
         </div>
       </div>
     </div>
@@ -23,7 +23,7 @@
     <div class="d-flex flex-wrap gap-4 justify-content-between">
       <div class="student d-flex flex-column gap-3" *ngFor="let student of graduateStudentList">
         <img [src]="student.image" class="rounded shadow-sm student-img" alt="{{ student.name }}">
-        <div class="d-flex flex-column gap-2 text-primary-blue text-center w-100">
+        <div class="d-flex flex-column text-primary-blue text-center w-100">
           <div class="fw-bold fs-2">{{ student.name }}</div>
           <div class="fs-6 text-wrap text-muted px-2">{{ student.designation }}</div>
         </div>

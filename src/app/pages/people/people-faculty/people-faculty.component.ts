@@ -47,6 +47,7 @@ export class PeopleFacultyComponent implements OnInit {
       designation: 'Assistant Professor',
       image: 'assets/external/Faculty-6.png',
       content: `Mr. Kiran S is an accomplished academician with over 9+ year of experience in management education, specializing in Finance and General Management. He is currently an Assistant Professor at BGS College of Engineering & Technology, Bengaluru, and is pursuing a Ph.D. in Finance at VTU, Belagavi, focusing on merger performance in the Indian banking sector. He is also UGC-NET qualified and holds degrees in MBA (Finance), M. Com, and PGDIBO.
+      <br/>
       He has taught various finance and management subjects and held academic roles at various institutions, contributing to ERP, exam coordination, NSS, and student development. He has published in Scopus and UGC-approved journals and presented at conferences including GBRC at IIFT, New Delhi. He is also a life member of professional bodies like the Indian Accounting Association and SSHRA. Known for his research focus, leadership, and commitment to student success, He brings both academic rigor and administrative excellence to the institutions he serves.`
     },
     {

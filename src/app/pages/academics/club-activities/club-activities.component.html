@@ -1,7 +1,7 @@
-<div class="d-flex flex-column gap-5 p-5">
+<div class="d-flex flex-column gap-1 gap-md-5 p-md-5 pt-5">
     <div class="underline fw-bold fs-1 text-heading-color align-self-center w-fit">Club Activities</div>
     <div class="d-flex justify-content-center align-items-center w-100 gap-5 flex-wrap p-5">
-        <div *ngFor="let image of images" class="d-flex flex-column justify-content-center align-items-center gap-5">
+        <div *ngFor="let image of images" class="d-flex flex-column justify-content-center align-items-center gap-3 gap-md-5">
             <img [src]="image.url" [alt]="image.alt || 'Club Activity Image'" class="cl-dim"/>
             <button class="btn bg-blue-color d-block mx-auto py-2 px-3 fs-5 fw-bold text-white">Know More</button>
         </div>

@@ -1,0 +1,8 @@
+<div class="d-flex flex-column gap-1 gap-md-5 p-md-5 pt-5">
+    <div class="underline fw-bold fs-1 text-heading-color align-self-center w-fit">Akshayakalpa Farm</div>
+    <div class="d-flex justify-content-center align-items-center w-100 gap-5 flex-wrap p-5">
+        <div *ngFor="let image of images">
+            <img [src]="image.url" [alt]="image.alt || 'Club Activity Image'" class="cl-dim"/>
+        </div>
+    </div>
+</div>

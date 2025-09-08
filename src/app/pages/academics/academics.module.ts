@@ -15,6 +15,7 @@ import { DairyDayComponent } from './industrial-visit/dairy-day/dairy-day.compon
 import { AkshayakalpaComponent } from './industrial-visit/akshayakalpa/akshayakalpa.component';
 import { EaglesUnboundComponent } from './industrial-visit/eagles-unbound/eagles-unbound.component';
 import { KsdlComponent } from './industrial-visit/ksdl/ksdl.component';
+import { CorporateLectureSeriesComponent } from './corporate-lecture-series/corporate-lecture-series.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,10 @@ const routes: Routes = [
           { path: 'festo', component: FestoComponent},
           { path: 'ksdl', component: KsdlComponent},
         ]
+      },
+      {
+        path: 'corporate-lecture-series',
+        component: CorporateLectureSeriesComponent
       }
     ]
   }
@@ -53,6 +58,6 @@ const routes: Routes = [
     ComponentsModule,
     RouterModule.forChild(routes)
 ],
-  declarations: [AcademicsComponent, MbaAcademicsComponent, ProgramAcademicsComponent, IndustrialVisitComponent, ClubActivitiesComponent, FinanceAndConsultingClubComponent, CompetitiveClubComponent, SpiritualClubComponent, FestoComponent, DairyDayComponent, AkshayakalpaComponent, EaglesUnboundComponent, KsdlComponent]
+  declarations: [AcademicsComponent, MbaAcademicsComponent, ProgramAcademicsComponent, IndustrialVisitComponent, ClubActivitiesComponent, FinanceAndConsultingClubComponent, CompetitiveClubComponent, SpiritualClubComponent, FestoComponent, DairyDayComponent, AkshayakalpaComponent, EaglesUnboundComponent, KsdlComponent, CorporateLectureSeriesComponent]
 })
 export class AcademicsModule { }

@@ -1,0 +1,17 @@
+.cl-dim{
+    width: 500px;
+    height: 400px;
+}
+.w-topic{
+    max-width: 500px;
+}
+
+@media (max-width: 576px) {
+    .cl-dim{
+        width: 350px;
+        height: 250px;
+    }
+    .w-topic{
+        max-width: 350px;
+    }
+}

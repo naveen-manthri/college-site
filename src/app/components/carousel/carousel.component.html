@@ -1,33 +1,40 @@
-<div class="home position-relative overflow-hidden">
-  <div
-    class="d-flex transition"
-    [style.transform]="'translateX(-' + currentIndex * (100 / images.length) + '%)'"
-    [style.width.%]="images.length * 100"
-    style=" height: 70vh"
-  >
-    <div class="flex-shrink-0 home-image-container" [style.width.%]="100/3">
-      <div
-        class="home-image-1 gap-5 justify-content-center d-flex align-items-center w-100 h-100 py-4"
-      >
-        <div class="d-flex flex-column gap-3 w-50 p-5">
-          <div class="fs-1 fw-bold">
-            Start Your <br/>MBA Journey Today
-          </div>
+<div class="home position-relative overflow-hidden d-none d-sm-block">
+  <div class="d-flex transition" style="height: 70vh; background: #fdfaf3" [style.transform]="
+      'translateX(-' + currentIndex * (100 / images.length) + '%)'
+    " [style.width.%]="images.length * 100">
+    <div class="flex-shrink-0 home-image-container" [style.width.%]="100 / 3">
+      <div class="home-image-1 gap-3 gap-sm-5 justify-content-center d-flex w-100 h-100 py-2">
+        <div class="d-flex flex-column gap-2 w-50 p-2 p-sm-0">
+          <div class="fs-1 fw-bold">Start Your MBA Journey Today</div>
           <div class="fs-5 text-justify">
-            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+            Embarking on an MBA journey is more than just earning a degree—it's a powerful step toward personal and
+            professional transformation. Whether you're looking to accelerate your career, switch industries, or build
+            your own business, an MBA equips you with the leadership skills, strategic thinking, and global perspective
+            needed to thrive in today’s dynamic world.
+            <br />
+            At this starting point, you will connect with like-minded professionals, gain insights from experienced
+            faculty, and immerse yourself in real-world business challenges. This is where your growth begins—where
+            ambition meets opportunity.
+            So, take the first step. Discover your potential.
+            <br />
+            Start your MBA journey here !
           </div>
-          <div class="my-4">
-            <button class="bg-brown-color rounded-2 px-4 py-3 fs-4 fw-bold text-white" (click)="onBookAnAppointmentBtnClick()">
+          <div class="my-1">
+            <button class="bg-brown-color rounded-2 p-2 px-sm-4 py-sm-3 fs-5 fs-9 fw-bold text-white"
+              (click)="onBookAnAppointmentBtnClick()">
               For Admission Click here
             </button>
           </div>
         </div>
-        <div>
-          <div class="position-absolute top-0">
-            <img src="https://cdn.prod.website-files.com/648b65b7aede9cf8e00549cf/680bf2866872bb33fd6a50c6_avatar-collection-ucanwest.png" class="img-fluid top-badge"/>
-            <div class="py-3 fw-bold text-center">1000+ Students</div>
+        <div class="position-relative py-4">
+          <div class="position-absolute top-10 py-4">
+            <img
+              src="https://cdn.prod.website-files.com/648b65b7aede9cf8e00549cf/680bf2866872bb33fd6a50c6_avatar-collection-ucanwest.png"
+              class="img-fluid top-badge" />
+            <div class="fw-bold text-center">1000+ Students</div>
           </div>
-          <img src="assets/external/carousel-img-1.png" alt="Main" class="img-fluid rounded-4 shadow carousel-img-1 clip-path" />
+          <img src="assets/external/carousel-img-1.png" alt="Main"
+            class="img-fluid rounded-4 shadow carousel-img-1 clip-path" />
           <div class="circle-bg bg-brown-color rounded-circle position-absolute bottom-0">
             <img src="assets/external/curve-text.png" alt="Main" class="img-fluid p-2 rotating-circle-text" />
             <div class="position-absolute top-50 start-50 translate-middle">
@@ -38,72 +45,102 @@
       </div>
     </div>
 
-    <div class="flex-shrink-0" [style.width.%]="100/3">
-      <div
-        class="home-image-2 d-flex align-items-center w-100 h-100"
-      >
-        <div class="w-50 d-flex flex-column gap-3 p-5">
+    <div class="flex-shrink-0" [style.width.%]="100 / 3">
+      <div class="home-image-2 d-flex align-items-center w-100 h-100">
+        <div class="w-50 d-flex flex-column gap-3 p-2 p-sm-5">
           <div class="fs-2">
-            Admission open for 2025-26  <br/>
+            Admission open for 2025-26 <br />
             PGCET COLLEGE CODE - B099
           </div>
-          <div class="underline fw-bold fs-1 text-heading-color w-fit">
+          <div class="underline fw-bold fs-1 text-heading-color w-sm-fit">
             2 year Full-Time Programs
           </div>
-          <div class="d-flex flex-column gap-2 fs-4">
+          <div class="d-flex flex-column gap-2 fs-4 fs-9">
             <div class="d-flex gap-3 align-items-center">
-              <img src="assets/external/tick-circle.png" width="32" height="32"/>
-              <div> MBA in Digital Marketing </div>
+              <img src="assets/external/tick-circle.png" width="32" height="32" class="icon" />
+              <div>MBA in Digital Marketing</div>
             </div>
             <div class="d-flex gap-3 align-items-center">
-              <img src="assets/external/tick-circle.png"  width="32" height="32"/>
-              <div> General MBA </div>
+              <img src="assets/external/tick-circle.png" width="32" height="32" class="icon" />
+              <div>General MBA</div>
             </div>
           </div>
-          <div class="d-flex gap-4">
-            <a routerLink="/academics/explore-program" class="bg-brown-color rounded-2 px-4 py-3 fs-4 fw-bold text-white text-decoration-none"> Explore our program </a>
-            <button class="rounded-2 px-4 py-3 fs-4 fw-bold text-white" style="background: #572F81;">
+          <div class="d-flex flex-wrap flex-sm-nowrap gap-4">
+            <a routerLink="/academics/explore-program"
+              class="bg-brown-color rounded-2 px-4 py-3 fs-4 fs-9 fw-bold text-white text-sm-nowrap text-decoration-none">
+              Explore our program
+            </a>
+            <a class="rounded-2 p-3 px-sm-4 py-sm-3 fs-4 fs-9 fw-bold text-white text-sm-nowrap text-decoration-none"
+              style="background: #572f81" href="assets/documents/brochure.pdf" download>
               Download Brochure
-            </button>
+            </a>
           </div>
         </div>
-        <div class="d-flex gap-5 px-5">
-          <img src="assets/external/carousel-img-2.1.png" class="carousel-img-2" style="transform: translateY(30px);"/>
-          <img src="assets/external/carousel-img-2.2.png" class="carousel-img-2" style="transform: translateY(-30px);"/>
+        <div class="d-flex gap-3 gap-sm-5 px-2 px-sm-5 carousel-img-wrapper">
+          <img src="assets/external/carousel-img-2.1.png" class="carousel-img-2" style="transform: translateY(30px)" />
+          <img src="assets/external/carousel-img-2.2.png" class="carousel-img-2" style="transform: translateY(-30px)" />
         </div>
       </div>
     </div>
 
-    <div class="flex-shrink-0" [style.width.%]="100/3">
-      <div
-        class="home-image-3 d-flex w-100 h-100 p-2"
-      >
-        <div class="d-flex flex-column gap-2 p-2 align-items-center w-100">
-          <div class="fs-2 fw-bold text-white">
-            Admission open for 2025-26  PGCET COLLEGE CODE - B099
-          </div>
-          <a routerLink="/academics/explore-program"
-            class="btn-brown text-white text-decoration-none"
-          >
-            Explore our program
-          </a>
+    <div class="flex-shrink-0" [style.width.%]="100 / 3">
+      <div class="d-flex flex-column gap-2 gap-xxl-1 p-2 p-xxl-0 align-items-center w-100 bg-black">
+        <div class="fs-2 fw-bold text-white d-none d-sm-block">
+          Admission open for 2025-26 PGCET COLLEGE CODE - B099
         </div>
+        <a routerLink="/academics/explore-program" class="btn-brown text-white text-decoration-none d-none d-sm-block">
+          Explore our program
+        </a>
       </div>
+      <img src="assets/external/contact-img.png" alt="Contact" class="w-100 h-100" />
     </div>
   </div>
 
-  <div
-    class="dot-box d-flex justify-content-center gap-2 position-absolute w-100"
-  >
-    <span
-      *ngFor="let image of images; let idx = index"
-      (click)="goToSlide(idx)"
-      class="rounded-circle"
-      [ngClass]="{
+  <div class="dot-box d-flex justify-content-center gap-2 position-absolute w-100">
+    <span *ngFor="let image of images; let idx = index" (click)="goToSlide(idx)" class="rounded-circle" [ngClass]="{
         'bg-primary': currentIndex === idx,
         'bg-secondary': currentIndex !== idx
-      }"
-      style="width: 12px; height: 12px; cursor: pointer"
-    ></span>
+      }" style="width: 12px; height: 12px; cursor: pointer"></span>
+  </div>
+</div>
+
+<div class="d-flex flex-column gap-4 home-image-1 p-4 d-sm-none">
+  <div class="d-flex flex-column gap-3 w-100">
+    <div class="fs-1 fw-bold">Start Your MBA Journey Today</div>
+    <div class="fs-6 text-justify">
+      Embarking on an MBA journey is more than just earning a degree—it's a powerful step toward personal and
+      professional transformation. Whether you're looking to accelerate your career, switch industries, or build your
+      own business, an MBA equips you with the leadership skills, strategic thinking, and global perspective needed to
+      thrive in today’s dynamic world.
+      <br />
+      At this starting point, you will connect with like-minded professionals, gain insights from experienced faculty,
+      and immerse yourself in real-world business challenges. This is where your growth begins—where ambition meets
+      opportunity.
+      So, take the first step. Discover your potential.
+      <br />
+      Start your MBA journey here !
+    </div>
+    <div class="my-1 my-sm-4">
+      <button class="bg-brown-color rounded-2 px-4 py-3 fs-4 fw-bold text-white"
+        (click)="onBookAnAppointmentBtnClick()">
+        For Admission Click here
+      </button>
+    </div>
+  </div>
+  <div class="position-relative">
+    <div class="position-absolute top-0">
+      <img
+        src="https://cdn.prod.website-files.com/648b65b7aede9cf8e00549cf/680bf2866872bb33fd6a50c6_avatar-collection-ucanwest.png"
+        class="img-fluid top-badge" />
+      <div class="fw-bold text-center">1000+ Students</div>
+    </div>
+    <img src="assets/external/carousel-img-1.png" alt="Main"
+      class="img-fluid rounded-4 shadow carousel-img-1 clip-path" />
+    <div class="circle-bg bg-brown-color rounded-circle position-absolute bottom-0">
+      <img src="assets/external/curve-text.png" alt="Main" class="img-fluid p-2 rotating-circle-text" />
+      <div class="position-absolute top-50 start-50 translate-middle">
+        <img src="assets/external/star.png" alt="Star" class="img-fluid star" />
+      </div>
+    </div>
   </div>
 </div>

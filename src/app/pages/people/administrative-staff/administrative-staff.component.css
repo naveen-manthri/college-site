@@ -1,4 +1,4 @@
-.text-primary-blue{
+.text-primary-blue {
   color: #021175;
 }
 
@@ -14,25 +14,38 @@
   height: auto;
   max-width: 100%;
 }
-.staff-main-img {
-  height: 60vh;
-  background-size: cover;
-  background-image: url(/assets/external/admin-group.png);
-}
-.staff-heading{
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #001a5d;
-  border-bottom: 4px solid;
-}
-.staff-img{
+
+.staff-img {
   width: 400px;
   height: 500px;
 }
-.student-img{
+.student-img {
   width: 400px;
   height: 500px;
 }
-.student{
+.student {
   width: 400px;
+}
+.fs-6{
+  font-size: 1rem !important;
+}
+@media (max-width: 576px) {
+  .staff-img,
+  .student-img {
+    width: 280px;
+    height: 320px;
+  }
+  .student {
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .fs-lg-3 {
+    font-size: 1.75rem !important;
+  }
+}
+@media (min-width: 576px) {
+  .h-60{
+    height: 60vh !important;
+  }
 }

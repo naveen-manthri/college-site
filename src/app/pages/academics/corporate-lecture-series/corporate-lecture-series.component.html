@@ -1,0 +1,11 @@
+<div class="d-flex flex-column gap-1 gap-md-5 p-md-5 pt-5">
+    <div class="underline fw-bold fs-1 text-heading-color align-self-center w-fit">Corporate Lecture Series</div>
+    <div class="d-flex justify-content-center align-items-center w-100 gap-5 flex-wrap p-5 pt-md-0">
+        <div *ngFor="let image of images" class="d-flex flex-column justify-content-center align-items-center text-heading-color">
+            <img [src]="image.url" [alt]="image.alt || 'Corporate Lectures Image'" class="cl-dim"/>
+            <div class="text-center mt-3 fs-2 fw-bold">{{ image.name }}</div>
+            <div class="text-center mt-1 fs-5"><b>Date:</b> {{ image.date }}</div>
+            <div class="text-center mt-1 fs-5 text-wrap w-topic px-2"><b>Topic: </b>{{ image.topic }}</div>
+        </div>
+    </div>
+</div>

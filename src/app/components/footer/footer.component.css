@@ -1,6 +1,25 @@
 .footer-bg-color {
-  background-color: #1B1B1B;
+  background-color: #1b1b1b;
 }
-.w-400{
+.w-400 {
   width: 400px;
+}
+.fs-sm-5{
+  font-size: 1.25rem !important
+}
+@media (max-width: 576px) {
+  .fs-9 {
+    font-size: 14px !important;
+  }
+  .footer-img {
+    max-width: 200px;
+  }
+  .w-400 {
+    max-width: 310px;
+  }
+}
+@media (min-width: 1600px) {
+  .fs-5 {
+    font-size: 1.5rem !important;
+  }
 }

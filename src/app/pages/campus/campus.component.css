@@ -1,45 +1,34 @@
-.campus-img {
-  height: 60vh;
-  background-size: cover;
-  background-position: center;
-  background-image: url(/assets/external/entrance.png);
-}
-.text-primary-blue {
-  color: #001a5d;
-}
-
-.bg-primary-blue {
-  background-color: #001a5d;
-}
 .whatsapp-fixed-icon {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
   z-index: 9999;
 }
-
 .whatsapp-fixed-icon img {
   width: 70px;
   height: auto;
   max-width: 100%;
 }
+.item {
+  width: 45%;
+}
 
-.campus-heading{
-  font-size: 2.5rem;
-  font-weight: 600;
+@media (min-width: 576px) {
+  .h-60{
+    height: 60vh !important;
+  }
 }
-.campus-award-list{
-  width: 85%;
-}
-.activities-list{
-  width: 90%;
-}
-.item{
-  width: 30%;
-}
-.h-400{
-  height: 400px !important;
-}
-.h-600{
-  height: 600px !important;
+@media (min-width: 992px) {
+  .item {
+    width: 30%;
+  }
+  .h-400 {
+    height: 400px !important;
+  }
+  .h-600 {
+    height: 600px !important;
+  }
+  .w-lg-50{
+    width: 50% !important;
+  }
 }

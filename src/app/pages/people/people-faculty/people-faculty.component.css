@@ -1,7 +1,3 @@
-.text-primary-blue{
-  color: #021175;
-}
-
 .whatsapp-fixed-icon {
   position: fixed;
   bottom: 1rem;
@@ -14,22 +10,31 @@
   height: auto;
   max-width: 100%;
 }
-.faculty-main-img {
-  margin-top: -20px;
-  height: 70vh;
-  background-size: cover;
-  background-image: url(/assets/external/facultygroup.png);
-}
-.faculty-heading{
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #001a5d;
-  border-bottom: 4px solid;
-}
-.text-justify {
-  text-align: justify;
-}
 .faculty-img{
   width: 400px;
   height: 500px;
+}
+.fs-6{
+  font-size: 1rem !important;
+}
+@media (max-width: 576px) {
+  .faculty-img{
+    width: 280px;
+    height: 320px;
+  }
+}
+@media (min-width: 992px) {
+  .fs-lg-3 {
+    font-size: 1.75rem !important;
+  }
+}
+@media (min-width: 576px) {
+  .h-60{
+    height: 60vh !important;
+  }
+}
+@media (min-width: 1200px) {
+  .fs-5{
+    font-size: 1.4rem !important;
+  }
 }

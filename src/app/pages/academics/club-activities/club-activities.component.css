@@ -1,0 +1,16 @@
+.cl-dim{
+    width: 400px;
+    height: 400px;
+}
+.btn:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+    background-color: #001498;
+}
+
+@media (max-width: 576px) {
+    .cl-dim{
+        width: 350px;
+        height: 350px;
+    }
+}

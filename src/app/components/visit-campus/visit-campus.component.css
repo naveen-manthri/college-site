@@ -1,13 +1,22 @@
-.main{
-    background: linear-gradient(270deg, #572E88 0%, #7B0053 100%);
+.main {
+  background: linear-gradient(270deg, #572e88 0%, #7b0053 100%);
 }
 
 .btn-primary-pink {
-    background-color: #ee3091;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
+  background-color: #ee3091;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
-  
+
 .btn-primary-pink:hover {
-    background-color: #d12a7d;
+  background-color: #d12a7d;
+}
+
+@media (max-width: 576px) {
+  .fs-9 {
+    font-size: 14px !important;
+  }
+  .width-100 {
+    width: 100%;
+  }
 }

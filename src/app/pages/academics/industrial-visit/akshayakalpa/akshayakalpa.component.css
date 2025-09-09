@@ -1,0 +1,11 @@
+.cl-dim{
+    width: 500px;
+    height: 400px;
+}
+
+@media (max-width: 576px) {
+    .cl-dim{
+        width: 350px;
+        height: 250px;
+    }
+}

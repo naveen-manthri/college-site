@@ -1,7 +1,7 @@
-import { Component, HostListener, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
-import { Subscription, filter } from 'rxjs';
-import { AppConstants } from 'src/app/constants/app-constants';
+import { Component, OnInit } from "@angular/core";
+import { NavigationEnd, Router } from "@angular/router";
+import { Subscription, filter } from "rxjs";
+import { AppConstants } from "src/app/constants/app-constants";
 
 @Component({
   selector: "app-nav-bar",
@@ -10,36 +10,30 @@ import { AppConstants } from 'src/app/constants/app-constants';
 })
 export class NavBarComponent implements OnInit {
   constructor(public router: Router) {}
-  canHide: boolean = false;
   mobile = AppConstants.Mobile;
   mobile2 = AppConstants.Mobile2;
   email = AppConstants.Email;
+  activeMenu: string | null = null;
+  togglingSubmenu = false;
+
+  toggleSubmenu(menu: string) {
+    this.togglingSubmenu = true;
+    this.activeMenu = this.activeMenu === menu ? null : menu;
+  }
 
   private routerSubscription!: Subscription;
-  
+
   ngOnInit(): void {
-    this.updateCanHide(); // initial check
-    
-    this.routerSubscription = this.router.events
-    .pipe(filter(event => event instanceof NavigationEnd))
-    .subscribe(() => {
-      this.updateCanHide(); // update on route change
-    });
-    this.canHide = this.router.url === '/home' && window.innerWidth < 768;
     this.router.events
-    .pipe(filter(event => event instanceof NavigationEnd))
-    .subscribe(() => this.closePopover());
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe(() => {
+        if (!this.togglingSubmenu) {
+          this.closePopover();
+        }
+        this.togglingSubmenu = false;
+      });
   }
   showPopover = false;
-
-  @HostListener('window:resize', [])
-  onResize() {
-    this.updateCanHide(); // update on screen resize
-  }
-
-  updateCanHide() {
-    this.canHide = this.router.url === '/home' && window.innerWidth < 768;
-  }
 
   ngOnDestroy(): void {
     this.routerSubscription?.unsubscribe();

@@ -1,161 +1,260 @@
 <div class="d-flex flex-column">
-  <app-carousel class="d-none d-md-block"></app-carousel>
-  <div class="stats-section d-flex justify-content-around align-items-center p-3">
-    <div class="d-flex flex-column justify-content-center align-items-center w-25">
+  <app-carousel class="d-block"></app-carousel>
+  <div class="stats-section d-flex justify-content-around p-3 px-2">
+    <div class="d-flex flex-column align-items-center w-25 gap-1">
+      <div class="stat-value d-flex justify-content-center align-items-center">
+        <div class="university-icon"></div>
+      </div>
+      <div class="stat-label text-center">
+        2 Years Full time Affiliated to Visvesvaraya Technological University
+      </div>
+    </div>
+    <div class="d-flex flex-column align-items-center w-25 gap-1">
       <div class="stat-value d-flex justify-content-center align-items-center">
         <div class="college-icon"></div>
       </div>
-      <div class="stat-label text-center">2 Years Full time Affiliated to Visvesvaraya Technological University</div>
+      <div class="stat-label text-center">Approved by AICTE, New Delhi</div>
     </div>
-    <div class="d-flex flex-column justify-content-center align-items-center w-25">
-      <div class="stat-value d-flex justify-content-center align-items-center">
-        <div class="college-icon"></div>
-      </div>
-      <div class="stat-label text-center">2 Years Full time Affiliated to Visvesvaraya Technological University</div>
-    </div>
-    <div class="d-flex flex-column justify-content-center align-items-center w-25">
+    <div class="d-flex flex-column align-items-center w-25 gap-1">
       <div class="stat-value d-flex justify-content-center align-items-center">
         <div class="graduation-icon"></div>
       </div>
-      <div class="stat-label text-center">Candidates to clear PGCET/KMAT/MAT/CAT</div>
+      <div class="stat-label text-center">
+        Candidates to clear PGCET/KMAT/MAT/CAT
+      </div>
     </div>
   </div>
-  <a
-    [href]="'https://wa.me/' + mobile"
-    class="text-black text-decoration-none whatsapp-fixed-icon m-3"
-    target="_blank"
-  >
+  <a [href]="'https://wa.me/' + mobile" class="text-black text-decoration-none whatsapp-fixed-icon m-3" target="_blank">
     <img src="assets/external/whatsappicon.png" width="90" alt="WhatsApp" />
   </a>
-  <div class="p-5 gap-5 d-flex flex-column justify-content-center align-items-center">
-    <div class="underline fw-bold fs-1 text-heading-color m-auto">About the Institute</div>
+  <div class="p-3 p-md-5 gap-5 d-flex flex-column justify-content-center align-items-center">
+    <div class="underline fw-bold fs-1 text-heading-color m-auto">
+      About the Institute
+    </div>
     <div class="d-flex flex-column gap-5 align-items-center">
-      <div class="d-flex gap-5 w-100">
-        <div class="text-justify fs-4 text-md-start d-flex flex-column align-items-center gap-5">
+      <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start gap-5 w-100">
+        <div class="text-justify fs-4 text-md-start d-flex flex-column align-items-center gap-3 gap-sm-5">
           <div>
-            Sri Adichunchanagiri Mahasamsthana Math is a spiritual and social centre with a history of over 1800 years. It has 500+ educational institutions that educate more than 200,000 students. Most institutions are located in rural parts of the country and offer education from kindergarten to PhD.
-            <br/>
-            <br/>
-            BGS College of Engineering and Technology (BGSCET) is a unit of Sri Adichunchanagiri Shikshana Trust, founded in 2022. It is located in west Bangalore, home of iconic landmarks such as the Indian Institute of Science, the World Trade Centre, and the ISKCON Temple. The institution is easily accessible by Namma Metro and Majestic Bus Station, City, and Yeshwantpur railway junctions.
+            Sri Adichunchanagiri Mahasamsthana Math is a spiritual and social
+            centre with a history of over 1800 years. It has 500+ educational
+            institutions that educate more than 200,000 students. Most
+            institutions are located in rural parts of the country and offer
+            education from kindergarten to PhD.
+            <br />
+            <br />
+            BGS College of Engineering and Technology (BGSCET) is a unit of Sri
+            Adichunchanagiri Shikshana Trust, founded in 2022. It is located in
+            west Bangalore, home of iconic landmarks such as the Indian
+            Institute of Science, the World Trade Centre, and the ISKCON Temple.
+            The institution is easily accessible by Namma Metro and Majestic Bus
+            Station, City, and Yeshwantpur railway junctions.
           </div>
-          <button class="bg-blue-color rounded-2 px-4 py-3 fs-4 fw-bold text-white" (click)="onBookAnAppointmentBtnClick()">
+          <button class="bg-blue-color rounded-2 px-4 py-3 fs-4 fw-bold text-white align-self-start"
+            (click)="onBookAnAppointmentBtnClick()">
             For Admission Click here
           </button>
         </div>
         <video class="college-video" controls autoplay muted loop>
-          <source src="assets/external/bgscet-college-video-1-md.mp4" type="video/mp4">
+          <source src="assets/external/bgscet-college-video-1-md.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
     </div>
   </div>
-  <div class="d-flex flex-column gap-5 p-5 ps-0 home-section">
-    <div class="underline fw-bold fs-1 text-white m-auto">About the program</div>
-    <div class="d-flex gap-5">
+  <div class="d-flex flex-column gap-5 p-4 p-md-5 ps-md-0 home-section">
+    <div class="underline fw-bold fs-1 text-white m-auto">
+      About the program
+    </div>
+    <div class="d-flex flex-column-reverse flex-md-row gap-5">
       <div>
-        <img src="/assets/external/home-prgm-img.png" alt="Program Image" class="home-prgm-img"/>
+        <img src="/assets/external/home-prgm-img.png" alt="Program Image" class="home-prgm-img" />
       </div>
-      <div class="text-white fs-4 text-justify">
-        If you are looking for a way to advance your career, increase your earning potential, and gain valuable skills and       
-        knowledge, then our MBA program might be the perfect choice for you. Our MBA program is designed to prepare you for leadership roles in various fields and industries, such as finance, marketing, entrepreneurship, and more.
-        BGS School of Management offers a two-year, full-time MBA program with a general management curriculum focused on real-world practice. Becoming a student at BGS means joining a global community that propels lifelong learning and career support alongside peers, faculty, and staff who will both challenge you and cheer you on as you find and accelerate your path. Students in our program engage in case studies, business simulations, and live projects.
-        Ultimately, a BGS MBA degree helps you take the next step with confidence.
+      <div class="text-white fs-4 text-break">
+        If you are looking for a way to advance your career, increase your
+        earning potential, and gain valuable skills and knowledge, then our MBA
+        program might be the perfect choice for you. Our MBA program is designed
+        to prepare you for leadership roles in various fields and industries,
+        such as finance, marketing, entrepreneurship, and more. BGS School of
+        Management offers a two-year, full-time MBA program with a general
+        management curriculum focused on real-world practice. Becoming a student
+        at BGS means joining a global community that propels lifelong learning
+        and career support alongside peers, faculty, and staff who will both
+        challenge you and cheer you on as you find and accelerate your path.
+        Students in our program engage in case studies, business simulations,
+        and live projects. Ultimately, a BGS MBA degree helps you take the next
+        step with confidence.
       </div>
     </div>
   </div>
 
-  <div class="d-flex flex-column gap-5 p-5 justify-content-center align-items-center">
-    <div class="underline fw-bold fs-1 text-heading-color">Industry-Relevant Specializations</div>
-    <div class="d-flex justify-content-center gap-4 w-100">
-      <div class="d-flex flex-column gap-2 w-50">
+  <div class="d-flex flex-column gap-4 gap-sm-5 p-4 p-sm-5 justify-content-center align-items-center">
+    <div class="underline fw-bold fs-1 text-heading-color text-center">
+      Industry-Relevant Specializations
+    </div>
+    <div class="d-flex flex-column flex-sm-row justify-content-center gap-4 w-100">
+      <div class="d-flex flex-column gap-2 w-sm-50 w-100">
         <div class="h-450 overflow-hidden position-relative">
-          <img src="/assets/external/mba-img-1.png" alt="Image 1" class="w-100 h-100 object-fit-cover transition-zoomin-img" />
+          <img src="/assets/external/mba-img-1.png" alt="Image 1"
+            class="w-100 h-100 object-fit-cover transition-zoomin-img" />
         </div>
         <a routerLink="/academics" class="btn-grey fs-4 text-center p-3 text-decoration-none text-black">General MBA</a>
       </div>
-      <div class="d-flex flex-column gap-2 w-50">
+      <div class="d-flex flex-column gap-2 w-sm-50 w-100">
         <div class="h-450 overflow-hidden position-relative">
-          <img src="/assets/external/mba-img-2.png" alt="Image 2" class="w-100 h-100 object-fit-cover transition-zoomin-img" />
+          <img src="/assets/external/mba-img-2.png" alt="Image 2"
+            class="w-100 h-100 object-fit-cover transition-zoomin-img" />
         </div>
-        <a routerLink="/academics/explore-program" class="btn-grey fs-4 text-center p-3 text-decoration-none text-black">MBA in Digital Marketing</a>
+        <a routerLink="/academics/explore-program"
+          class="btn-grey fs-4 text-center p-3 text-decoration-none text-black">MBA in Digital Marketing</a>
       </div>
     </div>
   </div>
 
-  <div class="d-flex flex-column gap-5 px-5 justify-content-center align-items-center">
+  <div class="d-flex flex-column gap-4 gap-sm-5 px-4 px-sm-5 justify-content-center align-items-center">
     <div class="underline fw-bold fs-1 text-heading-color">Campus Life</div>
     <div class="d-flex flex-column gap-3">
       <div class="d-flex gap-3 h-700">
-        <div class="d-flex flex-column w-50 gap-3">
+        <div class="d-flex flex-column w-100 w-sm-50 gap-3">
           <div class="h-50 overflow-hidden position-relative">
-            <img src="assets/external/home-cl-1.png" alt="Image 1" class="w-100 h-100 object-fit-cover transition-zoomin-img" />
+            <img src="assets/external/home-cl-1.png" alt="Image 1"
+              class="w-100 h-100 object-fit-cover transition-zoomin-img" />
           </div>
           <div class="h-50 overflow-hidden position-relative">
-            <img src="assets/external/home-cl-2.png" alt="Image 2" class="w-100 h-100 object-fit-cover transition-zoomin-img" />
+            <img src="assets/external/home-cl-2.png" alt="Image 2"
+              class="w-100 h-100 object-fit-cover transition-zoomin-img" />
           </div>
         </div>
-        <div class="w-50 overflow-hidden position-relative">
-          <img src="assets/external/home-cl-3.png" alt="Image 3" class="w-100 h-100 object-fit-cover transition-zoomin-img"/>
+        <div class="w-50 d-none d-sm-block overflow-hidden position-relative">
+          <img src="assets/external/home-cl-3.png" alt="Image 3"
+            class="w-100 h-100 object-fit-cover transition-zoomin-img" />
         </div>
       </div>
       <div class="w-100 overflow-hidden position-relative">
-        <img src="assets/external/home-cl-4.png" alt="Image 4" class="w-100 h-100 object-fit-cover transition-zoomin-img"/>
+        <img src="assets/external/home-cl-4.png" alt="Image 4"
+          class="w-100 h-100 object-fit-cover transition-zoomin-img" />
       </div>
     </div>
   </div>
 
-  <div class="d-flex gap-5 p-5 justify-content-center align-items-center">
-    <button class="bg-blue-color rounded-2 px-5 py-3 fs-4 fw-bold text-white" (click)="onBookAnAppointmentBtnClick()">
+  <div class="d-flex gap-3 gap-sm-5 p-5 justify-content-center align-items-center flex-wrap flex-sm-nowrap">
+    <button class="bg-blue-color rounded-2 px-sm-5 px-3 py-3 fs-4 fw-bold text-white text-nowrap"
+      (click)="onBookAnAppointmentBtnClick()">
       For Admission Click here
     </button>
-    <button class="bg-blue-color rounded-2 px-5 py-3 fs-4 fw-bold text-white">
+    <button class="bg-blue-color rounded-2 px-3 px-sm-5 py-3 fs-4 fw-bold text-white text-nowrap">
       View More
     </button>
   </div>
 
   <div class="d-flex flex-column gap-5 p-5 justify-content-center align-items-center home-section mb-5">
     <div class="underline fw-bold fs-1 text-white">Campus Placement</div>
-    <div class="logo-marquee-wrapper">
-      <div class="d-flex gap-5 justify-content-center align-items-center logo-marquee">
-        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
-          <img src="assets/external/tata-logo.png" alt="TATA" class="w-50"/>
+    <div class="logo-marquee-wrapper overflow-hidden">
+      <div class="logo-marquee-track d-flex">
+        <div class="d-flex gap-5 justify-content-center align-items-center logo-marquee">
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/tata-logo.png" alt="TATA" class="w-50" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/big-basket-logo.png" alt="Big Basket" class="w-75" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/abc-tech-logo.png" alt="ABC Tech" class="w-75" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/akshayakalpa-logo.png" alt="akshayakalpa" class="w-50" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/asaw-logo.png" alt="asaw" class="w-50" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/broadridge-logo.png" alt="broadridge" class="w-100" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/corizo-logo.png" alt="corizo" class="w-75" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/digitalsprint-logo.png" alt="digitalsprint" class="w-75" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/dr-agarwal-logo.png" alt="dr-agarwal" class="w-100 h-100" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/duru-logo.png" alt="duru" class="w-100 h-100" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/godrej-logo.png" alt="godrej" class="w-100" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/hexaware-logo.png" alt="hexaware" class="w-100" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/hr-labs-logo.png" alt="hr-labs" class="w-75" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/intellipaat-logo.png" alt="intellipaat" class="w-100" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/intrainz-logo.png" alt="intrainz" class="w-100 h-100" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/kotak-logo.png" alt="kotak" class="w-100" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/landmark-grp-logo.png" alt="landmark-grp" class="w-100" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/medpick-logo.png" alt="medpick" class="w-100" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/muthoot-finance-logo.png" alt="muthoot-finance" class="w-100" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/newwave-logo.png" alt="newwave" class="w-100" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/nj-grp-logo.png" alt="nj-grp" class="w-50" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/no-broker-logo.png" alt="no-broker" class="w-100 h-100" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/pensionbox-logo.png" alt="pensionbox" class="w-75" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/peopletree-hsptl-logo.png" alt="peopletree-hsptl" class="w-75" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/quick-air-logo.png" alt="quick-air" class="w-100" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/rptech-logo.png" alt="rptech" class="w-75" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/skyra-logo.png" alt="skyra" class="w-100" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/standard-chartered-logo.png" alt="standard-chartered"
+              class="w-100 h-100" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/storeking-logo.png" alt="storeking" class="w-100" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/surya-logo.png" alt="surya" class="w-75" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/tcs-logo.png" alt="tcs" class="w-100" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/techwise-logo.png" alt="techwise" class="w-75" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/wyzmindz-logo.png" alt="wyzmindz" class="w-75" />
+          </div>
+          <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
+            <img src="assets/placement-logos/zyoin-grp-logo.png" alt="zyoin-grp" class="w-100" />
+          </div>
         </div>
-        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
-          <img src="assets/external/big-basket-logo.png" alt="Big Basket" class="w-75"/>
-        </div>
-        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
-          <img src="assets/placement-logos/abc-tech-logo.png" alt="ABC Tech" class="w-75"/>
-        </div>
-        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
-          <img src="assets/placement-logos/akshayakalpa-logo.png" alt="ABC Tech" class="w-75"/>
-        </div>
-        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
-          <img src="assets/placement-logos/asaw-logo.png" alt="ABC Tech" class="w-75"/>
-        </div>
-        <!-- <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
-          <img src="assets/placement-logos/broadridge-logo.png" alt="ABC Tech" class="w-75"/>
-        </div>
-        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
-          <img src="assets/placement-logos/corizo-logo.png" alt="ABC Tech" class="w-75"/>
-        </div>
-        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
-          <img src="assets/placement-logos/digitalsprint-logo.png" alt="ABC Tech" class="w-75"/>
-        </div>
-        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
-          <img src="assets/placement-logos/dr-agarwal-logo.png" alt="ABC Tech" class="w-75"/>
-        </div>
-        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
-          <img src="assets/placement-logos/duru-logo.png" alt="ABC Tech" class="w-75"/>
-        </div>
-        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
-          <img src="assets/placement-logos/godrej-logo.png" alt="ABC Tech" class="w-75"/>
-        </div>
-        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
-          <img src="assets/placement-logos/hexaware-logo.png" alt="ABC Tech" class="w-75"/>
-        </div>
-        <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
-          <img src="assets/placement-logos/hr-labs-logo.png" alt="ABC Tech" class="w-75"/>
-        </div> -->
       </div>
     </div>
   </div>
@@ -175,10 +274,13 @@
     </div>
   </div> -->
 
-  <div class="d-flex flex-column px-5 gap-5 w-100 align-items-center">
-    <div class="underline fw-bold fs-1 text-heading-color">Student Testimonial</div>
-    <div class="rounded-3 shadow card-bg-color d-flex flex-column-reverse flex-md-row justify-content-center p-5 gap-5">
-      <div class="d-flex flex-column w-50 gap-3 position-relative">
+  <div class="d-flex flex-column px-2 px-sm-5 gap-5 mb-2 mb-md-0 w-100 align-items-center">
+    <div class="underline fw-bold fs-1 text-heading-color">
+      Student Testimonial
+    </div>
+    <div
+      class="rounded-3 shadow card-bg-color d-flex flex-column-reverse flex-md-row justify-content-center p-4 p-sm-5 gap-4 gap-sm-5">
+      <div class="d-flex flex-column w-100 w-sm-50 gap-3 position-relative">
         <div class="fs-4 text-justify">
           {{ testimonials[currentIndex].text }}
         </div>
@@ -191,20 +293,17 @@
           </div>
         </div>
         <div class="d-flex gap-4 align-items-center position-absolute bottom-0">
-          <span style="font-size: 40px; cursor: pointer" (click)="prevTestimonial()">
+          <span class="arrow" style="font-size: 40px; cursor: pointer" (click)="prevTestimonial()">
             &#8592;
           </span>
-          <span style="font-size: 40px; cursor: pointer" (click)="nextTestimonial()">
+          <span class="arrow" style="font-size: 40px; cursor: pointer" (click)="nextTestimonial()">
             &#8594;
           </span>
         </div>
       </div>
       <div class="rounded-3 shadow overflow-hidden position-relative testimonial-img">
-        <img
-          [src]="testimonials[currentIndex].image"
-          alt="{{ testimonials[currentIndex].author }} Testimonial"
-          class="w-100 h-100 transition-zoomin-img"
-        />
+        <img [src]="testimonials[currentIndex].image" alt="{{ testimonials[currentIndex].author }} Testimonial"
+          class="w-100 h-100 transition-zoomin-img" />
       </div>
     </div>
   </div>
@@ -216,19 +315,17 @@
             Join BGSCET | MBA
           </div>
           <div class="my-lg-4 my-3">
-            <button
-              class="btn-pink text-white"
-              (click)="onBookAnAppointmentBtnClick()"
-            >
+            <button class="btn-pink text-white fs-4" (click)="onBookAnAppointmentBtnClick()">
               For Admission Click here
             </button>
           </div>
         </div>
       </div>
 
-      <div class="col-md-6 d-flex flex-column gap-4 mb-2 ps-3">
+      <div class="col-md-6 d-flex flex-column gap-3 gap-sm-4 mb-2 ps-3">
         <div class="home-heading-text-1 text-primary-blue">
-          Admission open for 2025-26 <br/> PGCET COLLEGE CODE - B099
+          <span class="text-nowrap">Admission open for 2025-26 </span><br />
+          <span class="text-nowrap">PGCET COLLEGE CODE - B099</span>
         </div>
         <div class="d-flex flex-column gap-2">
           <div class="home-heading-text-1 text-color-pink">Make an Enquiry</div>

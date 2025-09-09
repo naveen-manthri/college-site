@@ -1,23 +1,21 @@
-<div class="d-flex flex-column gap-5">
-    <a
-    [href]="'https://wa.me/' + mobile"
-    class="text-black text-decoration-none whatsapp-fixed-icon m-3"
-    target="_blank"
-  >
+<div class="d-flex flex-column gap-4 gap-sm-5">
+  <a [href]="'https://wa.me/' + mobile" class="text-black text-decoration-none whatsapp-fixed-icon m-3" target="_blank">
     <img src="assets/external/whatsappicon.png" width="90" alt="WhatsApp" />
   </a>
-  <div class="faculty-main-img"></div>
-  <div class="d-flex flex-column gap-5 justify-content-center align-items-center mb-5">
+  <img src="assets/external/facultygroup.png" alt="Faculty" class="h-60" />
+  <div class="d-flex flex-column gap-4 gap-sm-5 justify-content-center align-items-center mb-5">
     <div class="underline fw-bold fs-1 text-heading-color">Faculty</div>
-    <div class="d-flex flex-column justify-content-center px-5" *ngFor="let faculty of facultyList">
-      <div class="faculty d-flex gap-5" >
-        <img [src]="faculty.image" class="rounded shadow-sm faculty-img" alt="{{ faculty.name }}">
-        <div class="d-flex flex-column gap-4">
-          <div class="d-flex flex-column gap-2 text-heading-color">
+    <div class="d-flex flex-column justify-content-center px-sm-5 px-3" *ngFor="let faculty of facultyList">
+      <div class="d-flex flex-column flex-md-row gap-5">
+        <img [src]="faculty.image" class="rounded shadow-sm faculty-img align-self-center align-self-md-start" alt="{{ faculty.name }}" />
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex flex-column align-items-center align-items-md-start text-heading-color text-center">
             <div class="fw-bold fs-1">{{ faculty.name }}</div>
-            <div class="fs-3"><em>{{ faculty.designation }}</em></div>
+            <div class="fs-4 fs-lg-3">
+              <em>{{ faculty.designation }}</em>
+            </div>
           </div>
-          <div class="text-justify fs-4">{{ faculty.content }}</div>
+          <div class="text-justify fs-5 fs-9" [innerHTML]="faculty.content"></div>
         </div>
       </div>
     </div>

@@ -17,4 +17,8 @@ export class PeopleDirectorComponent implements OnInit {
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
+
+  openAbout() {
+    window.open('assets/redirect-pages/about.html', '_blank'); 
+  }  
 }

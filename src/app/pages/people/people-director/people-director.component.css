@@ -23,10 +23,3 @@
     height: 60vh !important;
   }
 }
-@media (max-width: 576px) {
-  .director-photo{
-    width: 280px !important;
-    height: 300px !important;
-    align-self: center;
-  }
-}

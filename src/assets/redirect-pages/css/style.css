@@ -17,6 +17,7 @@ body{
   transform:translateY(6px);
   transition: opacity .45s ease, transform .45s ease;
   height: 100%;
+  font-family: Poppins !important;
 }
 body.page-ready{
   opacity:1;
